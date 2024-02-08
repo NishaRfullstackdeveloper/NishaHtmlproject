@@ -2,34 +2,53 @@
 <html>
     <head>
         <style>
-.main-container{ background-color: aqua; 
+.main-container{height: 1000px;
+width: 100%; 
+background-color: grey;
+display: flex;}
+
+.right-container{ width: 70%;
+background-color: greenyellow; }
+
+.left-container { width: 30%;
+    background-color: chocolate;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space;
-}
-.inner-container{ }
-
-.first-box{ 
-    background-color: red; height: 200px; width: 20%;
+    flex-direction: column;
 
 }
+.boxone{ height: 300px; background-color: aqua;}
+.boxtwo{  height: 400px; background-color: blueviolet;}
+.boxthree{ height: 400px; background-color: violet;}
 
-.second-box{ background-color: green;
-    height: 200px; width: 20%;
-}
-
-.third-box{ background-color: navy;
-    height: 200px; width: 20%;
-}
         </style>
+
     </head>
-    <body>
-        <div class="main-container">
-            <div class="first-box inner-contaier" ></div>
-            <div class="second-box inner-contaier"></div>
-            <div class="third-box inner-contaier"></div>
-        </div>
+
+
+<body>
+
+
+
+    <div class="main-container">
+
+<div class="right-container"></div>
+
+<div class=" left-container">
+    <div class="boxone"><video  ></video></div>
+    <div class="boxtwo"></div>
+    <div class="boxthree"></div>
+</div>
+    </div>
+    
+
+
+
+
+
+    
+   
+
         
+
     </body>
 </html>
