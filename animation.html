@@ -38,10 +38,30 @@
 
             }
         }
+.animatie-footer{
+    color: brown;
+    animation-name: myidea;
+    animation-duration: 10s;
+}
+@keyframes myidea{
+    0%{
+        color: orangered;
+        transform: translate3d(40px);
 
+    }
+    25%{color: rgb(50, 15, 2);
+        transform: translate3dY(-40px);}
+    50%{color: rgb(51, 33, 86);
+        transform: translate3dX(-40px);}
+    75%{color: rgb(142, 198, 12);
+        transform: translate3dX(40px);}
+100%{color: rgb(33, 193, 137);
+        transform: translate3dx(-40px);}
+}
     </style>
     <body>
         <h1 class="animatie-header"> MY TEXT</h1>
+        <h1 class="animatie-footer"> NEERA</h1>
 
     </body>
 </head>
