@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .main {
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+        }
+
+        .submit {
+            width: 150px;
+            height: 60px;
+            background-color: yellow;
+        }
+
+
+
+        .display {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+    <script>
+        function displayfunction(shagunOne, shagunTwo) {
+            let collectedvalue = add(shagunOne, shagunTwo);
+            document.getElementById("display").innerHTML = " the total amount of shagun is" + collectedvalue;
+        }
+
+        function add(numberOne, numberTwo) {
+            let total = numberOne + numberTwo;
+            return total;
+        }
+        function clearfunction() {
+            document.getElementById("display").innerHTML = "its calculator";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1 id="display"></h1>
+        <button class="submit" onclick="displayFunction( 100, 200 )"> click HERE</button>
+        <button class="submit" onclick="clearfunction()"> clear</button>
+    </div>
+
+</body>
+
+</html>
