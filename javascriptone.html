@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            width: 50vw;
+            height: 50vh;
+            background-color: tomato;
+        }
+
+        .submit {
+            width: 120px;
+            height: 30px;
+            background-color: thistle;
+
+        }
+
+        #display {
+            width: 50vw;
+            height: 20vh;
+            background-color: lightgray;
+            color: black;
+
+        }
+    </style>
+    <script>
+        // function displayFunction(  numberOne, numberTwo) {
+
+        //     document.getElementById("display").innerHTML="I AM ON   &emsp; I am Working"  +  into(numberOne, numberTwo);
+
+        // }
+        // function add( numberOne, numberTwo) {
+        //     let total = numberOne + numberTwo;
+        //     return total;
+        // }
+       
+        
+        function add() {
+            let firstNo = document.getElementById("number-one").value;
+            let secondNo = document.getElementById("number-two").value;
+            let total = Number(firstNo) + Number(secondNo);
+            document.getElementById("display").innerHTML = " the total is" + total;
+        }
+        function sub() {
+            let firstNo = document.getElementById("number-one").value;
+            let secondNo = document.getElementById("number-two").value;
+            let total = Number(firstNo) - Number(secondNo);
+            document.getElementById("display").innerHTML = " the total is" + total;
+        }
+        function into() {
+            let firstNo = document.getElementById("number-one").value;
+            let secondNo = document.getElementById("number-two").value;
+            let total = Number(firstNo) * Number(secondNo);
+            document.getElementById("display").innerHTML = " the total is" + total;
+        }
+        function div() {
+            let firstNo = document.getElementById("number-one").value;
+            let secondNo = document.getElementById("number-two").value;
+            let total = Number(firstNo) / Number(secondNo);
+            document.getElementById("display").innerHTML = " the total is" + total;
+        }
+        function clearfunction() {
+            document.getElementById("display").innerHTML = "";
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="display"> </h1>
+
+        <input value="0"  id="number-one" type="text" style="height: 40px; width: 80px; ">
+        <input value="0"   id="number-two" type="text" style="height: 40px; width: 80px; ">
+        <button type="submit" class="submit" onclick="add()">addition</button>
+      <br>
+      <br>
+        <button type="submit" class="submit" onclick="sub()">substraction</button>
+        <button type="submit" class="submit" onclick="into()">multiplication</button>
+        <button type="submit" class="submit" onclick="div()">devidation</button>
+        <button type="submit" class="submit" onclick="clearfunction()">clear</button>
+        
+    </div>
+</body>
+
+</html>
