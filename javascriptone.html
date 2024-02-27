@@ -5,14 +5,18 @@
     <style>
         .main {
             width: 50vw;
-            height: 50vh;
-            background-color: tomato;
+            height: 55vh;
+            background-color: rgb(32, 30, 29);
+            padding: 18px;
+            border-radius: 15px;
         }
 
         .submit {
-            width: 120px;
-            height: 30px;
+            width: 60px;
+            height: 50px;
             background-color: thistle;
+            font-size: 18px;
+            margin: px;
 
         }
 
@@ -21,7 +25,7 @@
             height: 20vh;
             background-color: lightgray;
             color: black;
-
+border-radius: 20px;
         }
     </style>
     <script>
@@ -34,33 +38,35 @@
         //     let total = numberOne + numberTwo;
         //     return total;
         // }
-       
+      
+      let total =  0;
         
         function add() {
-            let firstNo = document.getElementById("number-one").value;
-            let secondNo = document.getElementById("number-two").value;
-            let total = Number(firstNo) + Number(secondNo);
-            document.getElementById("display").innerHTML = " the total is" + total;
+        let firstNo = Number( document.getElementById("number-one").value);
+       let secondNo = Number( document.getElementById("number-two").value);
+             total = total + firstNo + secondNo;
+            document.getElementById("display").innerHTML = " the total is =" + total;
         }
         function sub() {
-            let firstNo = document.getElementById("number-one").value;
-            let secondNo = document.getElementById("number-two").value;
-            let total = Number(firstNo) - Number(secondNo);
-            document.getElementById("display").innerHTML = " the total is" + total;
+           let  firstNo =  Number(document.getElementById("number-one").value);
+          let secondNo = Number(document.getElementById("number-two").value);
+             total =  total + firstNo - secondNo;
+            document.getElementById("display").innerHTML = " the total is =" + total;
         }
         function into() {
-            let firstNo = document.getElementById("number-one").value;
-            let secondNo = document.getElementById("number-two").value;
-            let total = Number(firstNo) * Number(secondNo);
-            document.getElementById("display").innerHTML = " the total is" + total;
+            let firstNo = Number( document.getElementById("number-one").value);
+            let secondNo = Number(document.getElementById("number-two").value);
+             total = total + firstNo * secondNo;
+            document.getElementById("display").innerHTML = " the total is =" + total;
         }
         function div() {
-            let firstNo = document.getElementById("number-one").value;
-            let secondNo = document.getElementById("number-two").value;
-            let total = Number(firstNo) / Number(secondNo);
-            document.getElementById("display").innerHTML = " the total is" + total;
+            let firstNo = Number( document.getElementById("number-one").value);
+            let secondNo = Number( document.getElementById("number-two").value);
+             total = total + firstNo  / secondNo;
+            document.getElementById("display").innerHTML = " the total is =" + total;
         }
         function clearfunction() {
+            total =0;
             document.getElementById("display").innerHTML = "";
         } 
     </script>
@@ -70,16 +76,20 @@
     <div class="main">
         <h1 id="display"> </h1>
 
-        <input value="0"  id="number-one" type="text" style="height: 40px; width: 80px; ">
-        <input value="0"   id="number-two" type="text" style="height: 40px; width: 80px; ">
-        <button type="submit" class="submit" onclick="add()">addition</button>
-      <br>
-      <br>
-        <button type="submit" class="submit" onclick="sub()">substraction</button>
-        <button type="submit" class="submit" onclick="into()">multiplication</button>
-        <button type="submit" class="submit" onclick="div()">devidation</button>
+        <input value=""  id="number-one" type="number" style="height: 40px; width: 80px; ">
+        <input value=""   id="number-two" type="number" style="height: 40px; width: 80px; ">
         <button type="submit" class="submit" onclick="clearfunction()">clear</button>
         
+      <br>
+      <br>
+        <button type="submit" class="submit" onclick="add()">+</button>
+        <button type="submit" class="submit" onclick="sub()">-</button>
+        <br>
+        <br>
+
+        <button type="submit" class="submit" onclick="into()">*</button>
+        <button type="submit" class="submit" onclick="div()">/</button>
+       
     </div>
 </body>
 
