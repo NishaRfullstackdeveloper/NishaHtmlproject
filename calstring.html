@@ -8,14 +8,15 @@
             background-color: grey;
             height: 60vh;
             width: 60vh;
-            padding: 4px;
+            padding: 8px;
         }
 
-        .display {
+        .displaybox {
             width: 100%;
             height: 20%;
             background-color: rgb(43, 42, 42);
             color: white;
+            font-size: smaller;
         }
 
         .keypad {
@@ -32,31 +33,87 @@
             background-color: aqua;
         }
     </style>
-    <string>
+   <script>
+     let total = 0;
+        let displayString = "";
+        let action = 0;
 
-    </string>
+        function numberType(passnumber) {
+            displayString = displayString + passnumber.toString();
+            document.getElementById("display").innerHTML = displayString;
+             }
+
+             function clearFunction() {
+            total = 0;
+            displayString = "";
+            document.getElementById("display").innerHTML = ""
+        } 
+        function backSpace() {
+            displayString = displayString.substring(0, displayString.length - 1)
+            document.getElementById("display").innerHTML = displayString
+
+
+        }
+        function add() {
+            total = Number(displayString);
+            action = 1;
+            displayString = "";
+
+
+            document.getElementById("display").innerHTML = displayString;
+        }
+        function sub() {
+            total = Number(displayString);
+            action = 2;
+            displayString = "";
+
+            document.getElementById("display").innerHTML = displayString;
+        }
+        function multiplication() {
+            total = Number(displayString);
+            action = 3;
+            displayString = "";
+
+            document.getElementById("display").innerHTML = displayString;
+        }
+        function div() {
+            total = Number(displayString);
+            action = 4;
+            displayString = "";
+
+            document.getElementById("display").innerHTML = displayString;
+        }
+        function percentage() {
+            total = Number(displayString);
+            action = 5;
+            displayString = "";
+
+            document.getElementById("display").innerHTML = displayString;
+        }
+
+   </script>
 </head>
 
 <body>
     <div class="main">
-        <div class="display"></div>
+        <div class="displaybox"> <h1  id="display"> </h1></div>
         <div class="keypad">
             <button onclick="div()"> /</button>
             <button onclick="into()">*</button>
             <button onclick="sub()">-</button>
             <button onclick="add()">+</button>
-            <button onclick="numbertyped(7)">7</button>
-            <button onclick="numbertyped(8)">8</button>
-            <button onclick="numbertyped(9)">9</button>
-            <button onclick="backspace()"> back <br> space</button>
-            <button onclick="numbertyped(4)">4</button>
-            <button onclick="numbertyped(5)">5</button>
-            <button onclick="numbertyped(6)">6</button>
-            <button onclick="numbertyped(0)">0</button>
-            <button onclick="numbertyped(4)">1</button>
-            <button onclick="numbertyped(2)">2</button>
-            <button onclick="numbertyped(3)">3</button>
-            <button onclick="clearfunction()">clear</button>
+            <button onclick="numberType(7)">7</button>
+            <button onclick="numberType(8)">8</button>
+            <button onclick="numberType(9)">9</button>
+            <button onclick="backSpace()"> back <br> space</button>
+            <button onclick="numberType(4)">4</button>
+            <button onclick="numberType(5)">5</button>
+            <button onclick="numberType(6)">6</button>
+            <button onclick="numberType(0)">0</button>
+            <button onclick="numberType(4)">1</button>
+            <button onclick="numberType(2)">2</button>
+            <button onclick="numberType(3)">3</button>
+            <button onclick="clearFunction()">clear</button>
 
 
         </div>
