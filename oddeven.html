@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            height: 70vh;
+            width: 80vh;
+            background-color: grey;
+            border: 4px black;
+            padding: 10px;
+        }
+
+        #display {
+            height: 30%;
+            width: 100;
+            background-color: black;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+
+        }
+
+        .keypad {
+            width: 100%;
+            background-color: blueviolet;
+            height: 70%;
+        }
+
+        button {
+            height: 80px;
+            width: 120px;
+            background-color: rgb(33, 103, 53);
+            margin: 10px;
+
+        }
+    </style>
+    <script>
+         let number= 0
+       
+
+       // Even/Odd
+       function checkevenodd() {
+           numner = document.getElementById("evenodd").value;
+
+           if (number%2 ==0) {
+               document.getElementById("display").innerHTML = "The number is even";
+           }
+
+           else {
+               document.getElementById("display").innerHTML = " The number is odd";
+           }
+       }
+
+       // Vote
+       function eligibility() {
+
+
+           number = document.getElementById("age").value;
+
+           if (number >= 18) {
+
+               document.getElementById("display").innerHTML = " The person is eligible for vote";
+           }
+
+           else {
+               document.getElementById("display").innerHTML = "The person is not eligible for vote";
+           }
+
+
+
+       }
+       // clear
+
+       function clearFunction() {
+
+           document.getElementById("display").innerHTML = "";
+       }
+
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="display"></div>
+        <div class="keypad">
+
+            <input type="number" style=" height: 60px; width: 100px; background-color: aqua; margin: 20px; " id="evenodd">
+            <input type="number" style=" height: 60px; width: 100px; background-color: aqua;" id="age">
+            <br>
+            <br>
+            <button onclick="checkevenodd()"> check E/O</button>
+            <button onclick="eligibility()"> vote eligibility</button>
+            <button onclick="clearFunction()"> clear</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
