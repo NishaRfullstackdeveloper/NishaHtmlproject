@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculator</title>
+    <style>
+        /* styling for main */
+        .main {
+            height: 90vh;
+            width: 50vw;
+            background-color: #1e1f22;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+     /* styling for display */
+        #display {
+            height: 20%;
+            background-color: #1e1f22;
+            color: white;
+            font-size: smaller;
+            color: white;
+            font-size: 50px;
+        }
+
+     /* styling for keypad */
+        .keypad {
+            height: 80%;
+            width: 100%;
+            background-color: #1e1f22;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            border-width: 1px;
+            gap: 2px;
+        }
+     /* styling for rows */
+        .row {
+            background-color: #1e1f22;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2px;
+            font-size: 22px;
+        }
+     /* styling for last-row */
+        .last-row {
+            background-color: #1e1f22;
+            ;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2px;
+
+
+
+        }
+
+        .orange {
+            background-color: #fd8d0e;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .dark-gray {
+            background-color: #6b6b6b;
+            color: white;
+            font-size: 22px;
+
+
+        }
+
+        .darkk-gray {
+            background-color: #313334;
+            color: white;
+            font-size: 22px;
+
+        }
+    </style>
+<!-- script -->
+    <script>
+        let total = 0;
+        let displayString= ""  ;
+        let action = 0;
+        // nuumber passed //
+        function numberTyped(passednumber) {
+            displayString = displayString + passednumber.toString();
+            document.getElementById("display").innerHTML = displayString;
+
+            // if elese conditions //
+            if (passednumber == 7) {
+                document.getElementById("display").style.backgroundColor = "green";
+            }
+            else if (passednumber == 8) {
+                document.getElementById("display").style.backgroundColor = "pink";
+            }
+            else if (passednumber == 9) {
+                document.getElementById("display").style.backgroundColor = "grey";
+            }
+            else if (passednumber == 2) {
+                document.getElementById("display").style.backgroundColor = "red";
+            }
+            else {
+                document.getElementById("display").style.backgroundColor = "yellow";
+            }
+        }
+  // clear function //
+        function clearFunction() {
+            total = 0;
+            displayString = "";
+            document.getElementById("display").innerHTML = "";
+        }
+          // add //
+        function add(){
+            total= Number(displayString); 
+            action = 1;
+            displayString = "";
+            document.getElementById("display").innerHTML = displayString;
+        }
+ // sub //
+        function sub(){
+            total= Number(displayString);
+            action = 2;
+            displayString= "";
+            document.getElementById("display").innerHTML = displayString;
+        }
+ // into //
+        function into(){
+            total = Number(displayString);
+            action = 3;
+            displayString= "";
+            document.getElementById("display").innerHTML = displayString;
+        }
+ // div //
+        function div(){
+            total= Number(displayString);
+            action = 4;
+            displayString= "";
+            document.getElementById("display").innerHTML = displayString;
+        }
+ //  showresult //
+        function showresult(){
+          
+            if( action == 1){
+                total= total + Number(displayString);
+            } else if( action == 2){
+                total= total - Number(displayString);
+            } else if( action == 3){
+                total= total * Number(displayString);
+            } else if( action == 4 ){
+                total= total / Number(displayString);
+            }
+            displayString = total;
+            document.getElementById("display").innerHTML = displayString;
+
+        }
+// backspace
+        function backspace(){
+            displayString = displayString.substring(0, displayString.length -1);
+            document.getElementById("display").innerHTML = displayString;
+
+
+        }
+
+    </script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main">
+<!-- display -->
+        <div id="display"></div>
+<!-- keypad -->
+
+        <div class="keypad">
+            <!-- row-1 -->
+<div class="row">
+    <button class="dark-gray" onclick="clearFunction()">AC</button>
+    <button class="dark-gray" onclick="backspace()">back <br> space</button>
+    <button class="dark-gray" onclick="persent()"> %</button>
+    <button class="dark-gray" onclick="div()">/</button>
+</div>
+     <!-- row-2 -->
+<div class="row">
+    <button class="dark-gray" onclick="numberTyped(7)">7</button>
+    <button class="dark-gray" onclick="numberTyped(8)">8</button>
+    <button class="dark-gray" onclick="numberTyped(9)">9</button>
+    <button class="dark-gray" onclick="into()">*</button>
+</div>
+     <!-- row-3 -->
+<div class="row">
+    <button class="dark-gray" onclick="numberTyped(4)"> 4</button>
+    <button class="dark-gray" onclick="numberTyped(5)">5</button>
+    <button class="dark-gray" onclick="numberTyped(6)">6</button>
+    <button class="dark-gray" onclick="sub()">-</button>
+</div>
+     <!-- row-4 -->
+<div class="row">
+    <button class="dark-gray" onclick="numberTyped(1)">1</button>
+    <button class="dark-gray" onclick="numberTyped(2)">2</button>
+    <button class="dark-gray" onclick="numberTyped(3)">3</button>
+    <button class="dark-gray" onclick="add()">+</button>
+</div>
+     <!-- row-5 -->
+<div class="last-row">
+    <button class="dark-gray" onclick="numberTyped(0)">0</button>
+    <button class="dark-gray" onclick="numberTyped('.')">.</button>
+    <button class="dark-gray" onclick="showresult()">=</button>
+    
+</div>
+
+        </div>
+        </div>
+      
