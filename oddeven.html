@@ -28,55 +28,34 @@
         }
 
         button {
-            height: 80px;
-            width: 120px;
+            height: 30px;
+            width: 50%;
             background-color: rgb(33, 103, 53);
-            margin: 10px;
+            margin-left: 25%;
 
+        }
+
+        #input-one{
+            height: 60px;
+            width: 100px;
+            background-color: aqua;
+        }
+
+        #input-two {
+            height: 60px;
+            width: 100px;
+            background-color: aqua;
         }
     </style>
     <script>
-         let number= 0
-       
+        function evenOrOdd() {
+            let x = document.getElementById("input-one").value;
+            if (x % 2 == ) { document.getElementById("display").innerHTML = "EVEN NUMBER"; }
+        }
 
-       // Even/Odd
-       function checkevenodd() {
-           numner = document.getElementById("evenodd").value;
-
-           if (number%2 ==0) {
-               document.getElementById("display").innerHTML = "The number is even";
-           }
-
-           else {
-               document.getElementById("display").innerHTML = " The number is odd";
-           }
-       }
-
-       // Vote
-       function eligibility() {
-
-
-           number = document.getElementById("age").value;
-
-           if (number >= 18) {
-
-               document.getElementById("display").innerHTML = " The person is eligible for vote";
-           }
-
-           else {
-               document.getElementById("display").innerHTML = "The person is not eligible for vote";
-           }
-
-
-
-       }
-       // clear
-
-       function clearFunction() {
-
-           document.getElementById("display").innerHTML = "";
-       }
-
+else {
+            document.getElementById("display").innerHTML = "ODD NUMBER";
+        }
     </script>
 </head>
 
@@ -85,12 +64,13 @@
         <div id="display"></div>
         <div class="keypad">
 
-            <input type="number" style=" height: 60px; width: 100px; background-color: aqua; margin: 20px; " id="evenodd">
-            <input type="number" style=" height: 60px; width: 100px; background-color: aqua;" id="age">
+            <input type="number" id="input-one">
+            <input type="number" id="input-two">
             <br>
             <br>
-            <button onclick="checkevenodd()"> check E/O</button>
-            <button onclick="eligibility()"> vote eligibility</button>
+            <button onclick="evenOrOdd()"> check E/O</button> <br> <br>
+            <button onclick="check()"> no. equal or <br> not</button> <br> <br>
+            <button onclick="eligibility()"> vote eligibility</button> <br> <br>
             <button onclick="clearFunction()"> clear</button>
         </div>
     </div>
