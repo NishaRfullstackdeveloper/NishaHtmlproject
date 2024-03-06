@@ -50,14 +50,17 @@
         }
         </style>
         <script>
+
+            // EVEN ODD FONCTION
         function evenOdd(){
-            let x = document.getElementById("input-one").Value;
-            if (x % 2 == 0) {
-          document.getElementById("display-text").innerHTML = "EVEN NUMBER";}
- 
-            
-            else{ document.getElementById("display-text").innerHTML = " the number is odd"}
+            let x = document.getElementById("input-one").value;
+        if (x % 2 == 0) {
+          document.getElementById("display-text").innerHTML = "EVEN NUMBER";
+        } else {
+          document.getElementById("display-text").innerHTML = "ODD NUMBER";
         }
+        }
+        // VOTE ELIIGIBLILITY
 function voteEligible(){
     let x = document.getElementById("input-one").value;
         if (x >= 18) {
@@ -69,6 +72,7 @@ function voteEligible(){
         }
       
 }
+// NUMBER EQUALITY
 function numberEquality(){
 
     let x = document.getElementById( "input-one").value;
@@ -77,7 +81,7 @@ function numberEquality(){
     if ( x = y){ document.getElementById("display-text").innerHTML= " equal"; }
     else{ document.getElementById( "display-text").innerHTML= " not equal";}
 }
-
+// CLEAR FUNCTION
 function clearFunction(){
     displaystring = "";
     displaystring=  document.getElementById("display-text").innerHTML= "";
@@ -86,16 +90,20 @@ function clearFunction(){
         </script>
     </head>
     <body>
+        <!-- MAIN -->
         <div class="main">
+            <!-- MAIN -->
 <div class="display"> <h1 id="display-text" class="display-text"></h1></div>
-
+<!-- KEYPAD -->
 <div class=" keypad">
     <div>
+        <!-- INPUT BOXES -->
 <input type="number" id="input-one">
 <input type="number" id="input-two">
 </div>
 
 <div>
+    <!-- BUTTONS -->
 <button onclick="evenOdd()" class="custom-button" > No. is E/O?</button>
 <button onclick="voteEligible()" class="custom-button" > Vote Eligibility?</button>
 <button onclick="numberEquality()" class="custom-button" > no. is equal?</button>
