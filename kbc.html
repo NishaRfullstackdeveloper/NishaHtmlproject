@@ -18,9 +18,11 @@
         .display {
             height: 20%;
             width: 70%;
-            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200731/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg);
+            background-color: blue;
             margin-left: 15%;
             color: white;
+            text-align: center;
+
         }
 
         /* button */
@@ -72,76 +74,121 @@
 
         function questionThree() {
             document.getElementById("display-text").innerHTML =
-            " How many minutes are there in an hour?";
-            document.getElementById("answer-one").innerHTML =" 50 minute";
-               
+                " How many minutes are there in an hour?";
+            document.getElementById("answer-one").innerHTML = " 50 minute";
+
             document.getElementById("answer-two").innerHTML = "60 minute";
             document.getElementById("answer-three").innerHTML = " 80 minute";
             document.getElementById("answer-four").innerHTML = " 90 minute";
         }
         function questionFour() {
             document.getElementById("display-text").innerHTML =
-            " How many seconds are there in a minute?";
-            document.getElementById("answer-one").innerHTML =" 40 Second";
-               
+                " How many seconds are there in a minute?";
+            document.getElementById("answer-one").innerHTML = " 40 Second";
+
             document.getElementById("answer-two").innerHTML = "60 Second";
             document.getElementById("answer-three").innerHTML = " 48 Second";
             document.getElementById("answer-four").innerHTML = " 49 Second";
         }
         function questionFive() {
             document.getElementById("display-text").innerHTML =
-            "Name the National animal of India? ";
-            document.getElementById("answer-one").innerHTML =" Tiger ";
-               
+                "Name the National animal of India? ";
+            document.getElementById("answer-one").innerHTML = " Tiger ";
+
             document.getElementById("answer-two").innerHTML = " Camel";
             document.getElementById("answer-three").innerHTML = " Cow ";
             document.getElementById("answer-four").innerHTML = " Horse ";
         }
-    
+
         function questionSix() {
             document.getElementById("display-text").innerHTML =
-            " How many vowels are there in the English alphabet.?";
-            document.getElementById("answer-one").innerHTML =" 1 ";
-               
+                " How many vowels are there in the English alphabet.?";
+            document.getElementById("answer-one").innerHTML = " 1 ";
+
             document.getElementById("answer-two").innerHTML = " 5";
             document.getElementById("answer-three").innerHTML = " 6";
             document.getElementById("answer-four").innerHTML = " 8";
         }
         function questionSeven() {
             document.getElementById("display-text").innerHTML =
-            "Name the National tree of India?";
-            document.getElementById("answer-one").innerHTML ="Papaya tree ";
-               
+                "Name the National tree of India?";
+            document.getElementById("answer-one").innerHTML = "Papaya tree ";
+
             document.getElementById("answer-two").innerHTML = " Orange Tree";
             document.getElementById("answer-three").innerHTML = " Banana Tree ";
             document.getElementById("answer-four").innerHTML = "Banyan tree ";
         }
         function questionEight() {
             document.getElementById("display-text").innerHTML =
-            " Name the primary colours? ";
-            document.getElementById("answer-one").innerHTML =" orange,greem ,and pink ";
-               
+                " Name the primary colours? ";
+            document.getElementById("answer-one").innerHTML = " orange,greem ,and pink ";
+
             document.getElementById("answer-two").innerHTML = " pink, bkue, gray";
             document.getElementById("answer-three").innerHTML = "  Red, Green, and Blue";
             document.getElementById("answer-four").innerHTML = " yello, black, green ";
         }
         function questionNine() {
             document.getElementById("display-text").innerHTML =
-            " Which is the smallest month of the year?";
-            document.getElementById("answer-one").innerHTML ="March";
-               
+                " Which is the smallest month of the year?";
+            document.getElementById("answer-one").innerHTML = "March";
+
             document.getElementById("answer-two").innerHTML = " December";
             document.getElementById("answer-three").innerHTML = " February ";
             document.getElementById("answer-four").innerHTML = "January";
         }
         function questionTen() {
             document.getElementById("display-text").innerHTML =
-            " How many sides are there in a triangle?";
-            document.getElementById("answer-one").innerHTML =" 4";
-               
+                " How many sides are there in a triangle?";
+            document.getElementById("answer-one").innerHTML = " 4";
+
             document.getElementById("answer-two").innerHTML = "8";
             document.getElementById("answer-three").innerHTML = "12 ";
             document.getElementById("answer-four").innerHTML = "3 ";
+        }
+        function questionEleven() {
+            document.getElementById("display-text").innerHTML = " What is the tallest mountain in the world ?"
+                ;
+
+
+            document.getElementById("answer-one").innerHTML = " a) Mount Kilimanjaro ";
+
+            document.getElementById("answer-two").innerHTML = " b) Mount Everest ";
+            document.getElementById("answer-three").innerHTML = " c) Mount McKinley ";
+            document.getElementById("answer-four").innerHTML = " d) Mount Fuji ";
+        }
+        function questionTwelve() {
+            document.getElementById("display-text").innerHTML = " What is the largest organ in the human body? ";
+            document.getElementById("answer-one").innerHTML = " a) Heart";
+
+            document.getElementById("answer-two").innerHTML = "b) Liver";
+            document.getElementById("answer-three").innerHTML = " c) Brain";
+            document.getElementById("answer-four").innerHTML = "d) Skin ";
+        }
+        function questionThirteen() {
+            document.getElementById("display-text").innerHTML = " Name the tallest statue in India?";
+
+
+            document.getElementById("answer-one").innerHTML = "The Statue of Unity, India ";
+
+            document.getElementById("answer-two").innerHTML = " : The Statue of bond, India";
+            document.getElementById("answer-three").innerHTML = " : The Statue of Mhatma Gandhi, India";
+            document.getElementById("answer-four").innerHTML = ": The Statue of liberty, India";
+        }
+        function questionFourteen() {
+            document.getElementById("display-text").innerHTML = " Who is the Prime Minister of India? ";
+            document.getElementById("answer-one").innerHTML = " Narenrda modi. ";
+
+            document.getElementById("answer-two").innerHTML = " Pranav modi. ";
+            document.getElementById("answer-three").innerHTML = " Amit Shah. ";
+            document.getElementById("answer-four").innerHTML = " Devendra fardnavise. ";
+        }
+        function questionFifteen() {
+            document.getElementById("display-text").innerHTML = " What is the colour of the moon? ";
+            document.getElementById("answer-one").innerHTML = " White";
+
+            document.getElementById("answer-two").innerHTML = " Red";
+            document.getElementById("answer-three").innerHTML = " Blue";
+            document.getElementById("answer-four").innerHTML = " Orange";
         }
         // function answer
         function question(question) {
@@ -178,37 +225,49 @@
                 questionNumber = 10;
                 questionTen();
 
-            } else {
+            }
+            else if (question == 11) {
+                questionNumber = 11;
+                questionEleven();
+
+            }
+            else if (question == 12) {
+                questionNumber = 12;
+                questionTwelve();
+
+            }
+            else if (question == 13) {
+                questionNumber = 13;
+                questionThirteen();
+
+            }
+            else if (question == 14) {
+                questionNumber = 14;
+                questionFourteen();
+
+            }
+            else if (question == 15) {
+                questionNumber = 15;
+                questionFifteen();
+
+            }
+            else {
                 document.getElementById("display-text").innerHTML =
                     "  YOU ARE WINNER";
+                    startScreen();
             }
-            
+            // startScreen();
 
-            function answer(givenAnswer) {
-      if (questionNumber == 1) {
-        if (givenAnswer == 1) {
-          answerOne(true, 2);
-        } else {
-          answerOne(false, 0);
+           
         }
-      } else if (questionNumber == 2) {
-        if (givenAnswer == 1) {
-          answerOne(true, 3);
-        } else {
-          answerOne(false, 0);
-        }
-      }
-    }
-        }
-        // 
-        function answer(givenAnswer) {
+          function answer(givenAnswer) {
             if (questionNumber == 1) {
                 if (givenAnswer == 1) {
                     answerOne(true, 2);
                 } else {
                     answerOne(false, 0);
                 }
-            } 
+            }
 
             else if (questionNumber == 2) {
                 if (givenAnswer == 1) {
@@ -268,7 +327,42 @@
             }
             else if (questionNumber == 10) {
                 if (givenAnswer == 4) {
-                    answerOne(true, 10);
+                    answerOne(true, 11);
+                } else {
+                    answerOne(false, 0);
+                }
+            }
+            else if (questionNumber == 11) {
+                if (givenAnswer == 2) {
+                    answerOne(true, 12);
+                } else {
+                    answerOne(false, 0);
+                }
+            }
+            else if (questionNumber == 12) {
+                if (givenAnswer == 4) {
+                    answerOne(true, 13);
+                } else {
+                    answerOne(false, 0);
+                }
+            }
+            else if (questionNumber == 13) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 14);
+                } else {
+                    answerOne(false, 0);
+                }
+            }
+            else if (questionNumber == 14) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 15);
+                } else {
+                    answerOne(false, 0);
+                }
+            }
+            else if (questionNumber == 15) {
+                if (givenAnswer == 1) {
+                    answerOne(true, 0);
                 } else {
                     answerOne(false, 0);
                 }
@@ -277,15 +371,15 @@
         function answerOne(correctAnswer, nextQuestion) {
             if (correctAnswer) {
                 document.getElementById("display-text").innerHTML =
-                    "Sahi Jabab, Ha ha ha";
+                    " CORRECT ANSWER...";
                 document.getElementById("container").style.backgroundColor =
                     "#26BE32";
                 setTimeout(() => {
                     question(nextQuestion);
-                }, 3000);
+                }, 1000);
             } else {
                 document.getElementById("display-text").innerHTML =
-                    "SSSS, Galat Jawab.";
+                    " Wrong Answer";
                 document.getElementById("container").style.backgroundColor =
                     "#FF0000";
                 setTimeout(() => {
