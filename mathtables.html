@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-color: gray;
+            height: 80vh;
+            width: 80vh;
+        }
+
+        .display {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(46, 45, 45);
+            color: white;
+        }
+
+        .keys {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            gap: 10px;
+
+        }
+
+        .input-one {
+            background-color: blueviolet;
+            height: 50px;
+            width: 80%;
+        }
+
+        .input-two {
+            background-color: blueviolet;
+            height: 50px;
+            width: 80%;
+        }
+
+        .button {
+            background-color: aqua;
+            height: 50px;
+            width: 80%;
+        }
+    </style>
+    <script>
+        function displayText() {
+            let x = document.getElementById("input").value;
+            let output = "";
+            let y = 1;
+           
+
+            while (y <= 10) {
+                let result = y * x;
+                output = output + x + " * " + y + " = " + result;
+                output = output + "<br/>";
+                y = y + 1;
+            }
+            document.getElementById("display").innerHTML = output;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="display" id="display"> </div>
+
+        <div class=" keys">
+            <input id="input" class="input-one" type="number" value="" />
+            <button onclick="displayText()" class="button"> CLICK ME</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

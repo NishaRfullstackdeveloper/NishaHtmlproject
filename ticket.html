@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-color: lightpink;
+            height: 100vh;
+            width: 100vh;
+        }
+
+        .display {
+            background-color: black;
+            width: 100%;
+            height: 40%;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .input-one {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            margin: 2%;
+
+        }
+
+        .input-two {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            margin: 2%;
+
+        }
+
+        .button {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            font-size: 22px;
+            margin: 2%;
+
+        }
+    </style>
+
+    <script>
+        // let age = document.getElementById("input").value= "";
+        // function arithmaticFunction(age){
+        //     let output = "FULL TICKET" ;
+
+        //     if ( age <=17 || age > 60){
+        //         output = " HALF TICKET"
+        //     }
+
+        // if ( age <= 17){
+        //     output = "HALF TCKET";
+        // }
+
+        // if ( age > 60){
+        //     output = "HALF TCKET";
+        // }
+        //     document.getElementById("display").innerHTML = output ;
+        // }
+
+        function schoolFunction() {
+            let x = document.getElementById("input-one").value
+            let y = document.getElementById("input-two").value
+            let output = "invalid";
+
+            if ((y == "white") || (y == "red") && x <14) {
+                output = " valid";
+                document.getElementById("display").innerHTML = output;
+            }
+            else {
+                output = "invalid";
+                document.getElementById("display").innerHTML = output;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="display" class="display"></div>
+
+        <input id="input-one" class="input-one" type="number">
+        <input id="input-two" class="input-two" type="text">
+
+
+        <button onclick="schoolFunction()" class="button"> Clilck Me</button>
+    </div>
+</body>
+
+</html>
