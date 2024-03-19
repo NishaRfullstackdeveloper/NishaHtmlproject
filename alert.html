@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Document</title>
+
+
+    <style> 
+    .main{ 
+        display: flex;
+        flex-direction: row;
+       
+        margin: 15px;
+        justify-content: center;
+        align-items: center;}
+    .orange{ 
+        background-color: orange;
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
+    .blue{ 
+        background-color: rgb(15, 15, 200);
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
+    .gray{ 
+        background-color: rgb(70, 70, 69);
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
+    </style>
+    <script>
+
+   
+       
+ function alertOrange(){
+     alert ("helloooo ....its orange");
+}
+function alertBlue(){
+     alert ("helloooo ....its blue");
+}
+function alertGray(){
+     alert ("helloooo ....its gray");
+}
+
+    </script>
+</head>
+<body>
+    <div class="main">
+    <div onclick="alertOrange()" class="orange" ></div>
+    <div onclick="alertBlue()" class="blue"></div>
+    <div onclick="alertGray()" class="gray" ></div>
+</div>
+</body>
+</html>

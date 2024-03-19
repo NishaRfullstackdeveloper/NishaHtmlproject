@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.main{
+    background-color: lightpink;
+    height: 80vh;
+    width: 80vh;
+}
+   .display{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-size: 22px;
+   }
+   .input{
+    height: 10%;
+    width: 80%;
+    background-color: violet;
+    margin: 10%;
+    margin-bottom: 0;
+   }
+   .button{
+    height: 10%;
+    width: 80%;
+    background-color: violet;
+    font-size: 22px;
+    margin: 10%;
+    margin-bottom: 5%;
+   }
+   </style>
+
+        <script>
+            
+  let age = prompt( " your age ?");
+  let x = document.getElementById("input").value;
+
+  document.getElementById("display").innerHTML = " ELIGIBLE FOR VOTE";
+  document.getElementById("display").innerHTML = "  NOT ELIGIBLE FOR VOTE";
+  
+
+        </script>
+    </head>
+<body>
+    <div class="main">
+
+         <div class="display"></div>
+
+         <input class="input" type="number"/>
+
+         <button class="button"> Clilck Me</button>
+    </div>
+</body>
+
+</html>
