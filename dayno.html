@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main-container {
+            background-color: saddlebrown;
+            background-image:
+                url(https://st.adda247.com/https://adda247jobs-wp-assets-prod.adda247.com/jobs/wp-content/uploads/sites/2/2022/09/27182311/Untitled-design-15.png);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+background-repeat: no-repeat;
+background-size: cover;
+        }
+
+        .main {
+            background-color: lightpink;
+            height: 80vh;
+            width: 80vh;
+            border-radius: 20px;
+            
+        }
+
+        .display {
+            background-color: #00224D;
+            width: 100%;
+            height: 40%;
+            color: white;
+            font-size: 30px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .input {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            margin: 10%;
+            margin-bottom: 0;
+        }
+
+        .button {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            font-size: 30px;
+            margin: 10%;
+            margin-bottom: 5%;
+        }
+    </style>
+
+    <script>
+
+
+        function dayFunction() {
+            let x = document.getElementById("input").value;
+            if (x == 1) {
+                document.getElementById("display").innerHTML = "MONDAY";
+            }
+            else if (x == 2) {
+                document.getElementById("display").innerHTML = "TUESDAY";
+            }
+            else if (x == 3) {
+                document.getElementById("display").innerHTML = "WEDNESDAY";
+            }
+            else if (x == 4) {
+                document.getElementById("display").innerHTML = "THURSDAY";
+            }
+            else if (x == 5) {
+                document.getElementById("display").innerHTML = "FRIDAY";
+            }
+            else if (x == 6) {
+                document.getElementById("display").innerHTML = "SATURDAY";
+            }
+            else if (x == 7) {
+                document.getElementById("display").innerHTML = "SUNDAY";
+            }
+            else {
+                document.getElementById("display").innerHTML = "Invalid Number";
+            }
+            console.log()
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main">
+
+            <div id="display" class="display"></div>
+
+            <input id="input" class="input" type="number" />
+
+            <button onclick="dayFunction()" class="button"> Clilck Me</button>
+        </div>
+</body>
+
+</html>
