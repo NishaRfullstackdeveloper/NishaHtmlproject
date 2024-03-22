@@ -3,10 +3,21 @@
 
 <head>
     <style>
+        .main-container {
+            background-image: url(https://c8.alamy.com/comp/MPTFXG/abc-patternvector-seamless-alphabet-pattern-on-a-white-background-MPTFXG.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
         .main {
             background-color: lightpink;
             height: 80vh;
             width: 80vh;
+            background-image: url(https://thumbs.dreamstime.com/b/abc-background-20617494.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .display {
@@ -14,7 +25,10 @@
             width: 100%;
             height: 40%;
             color: white;
-            font-size: 22px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .input {
@@ -40,28 +54,31 @@
 
         function vowelFunction() {
             let x = document.getElementById("input").value;
-            if ((x == "a")|| (x == "e") || (x == "i")|| (x == "o") || (x == "u")) {
+            if ((x == "a") || (x == "e") || (x == "i") || (x == "o") || (x == "u")) {
                 document.getElementById("display").innerHTML = "THE LETTER IS VOWEL";
             }
-          
+
             else {
                 document.getElementById("display").innerHTML = "THE LETTER IS CONSONANT";
             }
-            
+
         }
 
     </script>
 </head>
 
 <body>
-    <div class="main">
+    <div class="main-container">
+        <div class="main">
 
-        <div id="display" class="display"></div>
+            <div id="display" class="display"></div>
 
-        <input id="input" class="input" type="text" />
+            <input id="input" class="input" type="text" />
 
-        <button onclick="vowelFunction()" class="button"> Clilck Me</button>
+            <button onclick="vowelFunction()" class="button"> Clilck Me</button>
+        </div>
     </div>
+
 </body>
 
 </html>
