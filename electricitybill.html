@@ -3,20 +3,30 @@
 
 <head>
     <style>
+        /* main */
         .main {
             background-color: lightpink;
-            height: 80vh;
-            width: 80vh;
+            height: 120vh;
+            width: 130vh;
+            background-image: url(https://brainboxai.com/hubfs/Imported_Blog_Media/header_articles_%2811%29-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+       margin-left: 15%;
+        
         }
-
+/* display */
         .display {
-            background-color: black;
+            background-color: rgba(red, green, blue, alpha);
             width: 100%;
-            height: 40%;
+            height: 20%;
             color: white;
             font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
-
+/* input */
         .input {
             height: 10%;
             width: 80%;
@@ -24,7 +34,7 @@
             margin: 10%;
             margin-bottom: 0;
         }
-
+/* button */
         .button {
             height: 10%;
             width: 80%;
@@ -33,13 +43,43 @@
             margin: 10%;
             margin-bottom: 5%;
         }
+        /* format */
+        .format{
+            height: 50%;
+            width: 100%;
+          
+        }
+        /* table heading */
+        th{
+            border: 5px;
+            border-style: groove;
+            border-color: black;
+            height: 50px;
+            width: 200px;
+            margin: 15px;
+            color: #A0153E;
+            font-size: 26px;
+        }
+        /* table data */
+        td{
+            border: 5px;
+            border-style: groove;
+            border-color: black;
+            height: 50px;
+            width: 200px;
+            margin: 15px;
+            color: #f52e0b;
+            font-size: 24px;
+            background-color: rgb(from color r g b);
+        }
     </style>
 
     <script>
+        // function
         function bill() {
             
             let x = Number(document.getElementById("input").value);
-
+let y = Number(document.getElementById("input-two").value);
             if (x <= 50) {
 
 
@@ -63,13 +103,53 @@
 </head>
 
 <body>
+    <!-- main -->
     <div class="main">
-
+<!-- display -->
         <div id="display" class="display"></div>
 
-        <input id="input" class="input" type="number" placeholder="unit" />
-
+        <label style="font-size: 26px;" for="First name"> Enter units:&emsp;&emsp;</label>
+        <input  id="input" style="font-size: 16px; height: 20px; width: 300px;" type="number" placeholder="enter your invest unit"><br>
+        <br>
+        <label style="font-size: 26px;" for="First name"> Enter late days :&emsp;&emsp;</label>
+        <input  id="input-two" style="font-size: 16px; height: 20px; width: 300px;" type="number" placeholder="late fee">
+       
+       
         <button onclick="bill()" class="button"> Clilck Me</button>
+        <div class="format">
+            <table> 
+               <tr>
+                <th>Range ( in units)</th>
+                <th> Rate ( /unit) </th>
+                <th>  SurplusCharge </th>
+                <th> Late fee(in rs.)</th>
+               </tr>
+               <tr>
+                <td> 0-50 units</td>
+                <td> 2rs /unit </td>
+                <td> No surcharge</td>
+                <td> more than 10days= 10rs</td>
+               </tr>
+               <tr>
+                <td>  51-150 units</td>
+                <td>  4rs/unit</td>
+                <td>   No surcharge</td>
+                <td> more than 20days= 20rs</td>
+               </tr>
+               <tr>
+                <td> 151-250 unit</td>
+                <td>  6rs/ unit</td>
+                <td>  10%</td>
+                <td> more than 30days= 30rs</td>
+               </tr>
+               <tr>
+                <td> 250 & above units</td>
+                <td>  8rs/unit</td>
+                <td> 20%</td>
+                <td> more than 30days= 40rs</td>
+               </tr>
+            </table>
+        </div>
     </div>
 </body>
 
