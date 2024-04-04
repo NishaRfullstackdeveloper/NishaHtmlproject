@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        /* main */
+        .main {
+            height: 200vh;
+            width: 200vh;
+            background-image: url(https://img.freepik.com/free-photo/banner-with-abstract-background-with-blue-tones-paper-cutout-waves_24972-1917.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712016000&semt=ais);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /*main container */
+        .main-container {
+            height: 158vh;
+            width: 150vh;
+            margin-top: 50px;
+            /* background-color: rebeccapurple; */
+
+        }
+
+        /* heading */
+        .heading {
+            height: 10%;
+            /* background-color: aliceblue; */
+            width: 100%;
+        }
+
+        /* head one */
+        .head-one {
+            height: 50%;
+            width: 100%;
+            /* background-color: aquamarine; */
+            text-align: center;
+            font-size: 44px;
+            font-weight: bolder;
+
+
+        }
+
+        /* head two */
+        .head-two {
+            height: 50%;
+            width: 100%;
+            /* background-color: blue; */
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        /* page */
+        .page {
+            background-color: white;
+            height: 85%;
+            width: 100%;
+            /* background-image: url(https://img.freepik.com/free-vector/simple-blue-blank-background-vector-business_53876-169282.jpg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 26;
+        }
+
+        /* buttonn line */
+        .button-line {
+            height: 10%;
+            width: 100%;
+            /* background-color:rebeccapurple ; */
+            display: flex;
+            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+
+        }
+
+        /* button */
+        button {
+            height: 80%;
+            width: 30%;
+            font-size: 35px;
+            background-color: gray;
+        }
+
+        .list-page {
+            height: 150vh;
+            width: 145vh;
+          
+        }
+
+        .table {
+            height: 80%;
+            width: 100%;
+            background-color: white;
+            border: 2px black;
+        }
+
+        table,
+        tr,
+        th {
+            border-style: groove;
+            color: black;
+            height: 100px;
+            width: 1000px;
+
+        }
+
+        th {
+            background-color: #59575c;
+
+            height: 100px;
+            width: 1000px;
+
+        }
+
+        .thth {
+            color: #f4f8f2;
+            height: 100px;
+            width: 1000px;
+        }
+    </style>
+    <script>
+        // script
+
+        function entryFunction() {
+            document.getElementById("inputs").hidden = false;
+            document.getElementById("studentData").hidden = true;
+        }
+        function listFunction() {
+            document.getElementById("inputs").hidden = true;
+            document.getElementById("studentData").hidden = false;
+        }
+        window.onload = function () { entryFunction(); }
+
+        function clearFunction() {
+            document.getElementById("formpage").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <div class="main"> -->
+    <!-- main-container -->
+    <div class="main-container" id="inputs">
+        <!-- heading  -->
+        <div class="heading">
+            <div class="head-one">ENJOY PROGRAMMING</div>
+            <div class="head-two"> ADMISSION FORM </div>
+        </div>
+
+        <div class="page">
+            <div class="button-line">
+                <!-- entry button -->
+                <button onclick="entryFunction()" class="entry">ENTRY</button>
+                <!-- list button -->
+                <button onclick="listFunction()" class="list"> LIST</button>
+            </div>
+            <!-- inputs -->
+            <div  class="inputs">
+                <fieldset>
+                    <h2> Enjoy Programming:Enter your Details</h2>
+                    <br>
+                    <!-- first name -->
+                    <label for=" First name"> First name:&emsp;&emsp;</label>
+                    <input type="text" placeholder="enter your name">
+                    <br>
+                    <br>
+                    <!-- last name -->
+                    <label for="Last name"> Last name:&emsp;&emsp;</label>
+                    <input type="text" placeholder="ebter your last name">
+                    <br>
+                    <br>
+                    <!-- own laptop  -->
+                    <h2>What laptop do you Own ?</h2>
+                    <br>
+
+                    &emsp;&emsp;<input type="radio" name="type" value="Windows"> Windows
+                    <br>
+                    &emsp;&emsp;<input type="radio" name="type" value="Linux"> Linux
+                    <br>
+
+                    &emsp;&emsp;<input type="radio" name="type" value="mac"> Mac
+                    <br>
+                    <!-- education -->
+
+                    <h3> Select your Education </h3>
+
+
+                    &emsp;&emsp;<input type="radio" name=" Education" value="schooling">schooling
+                    <br>
+                    &emsp;&emsp;<input type="radio" name=" Education" value="jr. school"> jr.school
+                    <br>
+                    &emsp;&emsp;<input type="radio" name=" Education" value="Graduation">Graduaction
+                    <br>
+                    <form action="">
+
+
+
+                        <br>
+                        <br>
+
+
+                        <!-- DOB -->
+                        <label for=" date of birth"> Date Of Birth :</label>
+                        <input type="date">
+                        <br>
+                        <br>
+                        <!-- email -->
+                        <label for="email"> Email :</label>
+                        <input type="email">
+                        <br>
+                        <br>
+                        <!-- contact no. -->
+                        <label for=" contact no."> Contact No.</label>
+                        <input type="">
+                        <br>
+                        <br>
+
+                        <!-- communication skill range -->
+
+
+                        <!-- text area -->
+                        <label for="">tell somthing about yourself</label>
+                        <textarea name="textarea" id=" about self" cols="30" rows="10"> </textarea>
+                        <br>
+                        <br>
+
+                        <!-- SUBMIT BUTTON -->
+                        <button onclick=" clearFunction()">SUBMIT</button>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- page2 -->
+    <div id="studentData" class="list-page">
+        <div class="button-line">
+            <!-- entry button -->
+            <button onclick="entryFunction()" class="entry">ENTRY</button>
+            <!-- list button -->
+            <button onclick="listFunction()" class="list"> LIST</button>
+        </div>
+        <div class="table">
+            <table>
+                <!-- tr -->
+                <tr>
+                    <!-- table head -->
+                    <th >SR.NO.</th>
+                    <th> FIRST NAME</th>
+                    <th>LAST NAME</th>
+                    <th>OWN LAPTOP</th>
+                    <th>thu</th>
+                    <th>fri</th>
+                    <th>sat</th>
+                    <th>sun</th>
+                </tr>
+
+                <!-- tr -->
+                <tr>
+                    <!-- th -->
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <!-- th -->
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- th -->
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- th -->
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+</body>
+
+</html>
