@@ -10,11 +10,11 @@
         .main {
             height: 200vh;
             width: 200vh;
-            background-image: url(https://img.freepik.com/free-photo/banner-with-abstract-background-with-blue-tones-paper-cutout-waves_24972-1917.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1712016000&semt=ais);
+      
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
-            /* justify-content: center; */
+     
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -64,7 +64,7 @@
             background-color: white;
             height: 85%;
             width: 100%;
-            /* background-image: url(https://img.freepik.com/free-vector/simple-blue-blank-background-vector-business_53876-169282.jpg); */
+            /* background-image: url(https://img.freepik.com/free-vector/simple-blue-blank-background-vector-business_53876-169282.jpg);  */
             background-repeat: no-repeat;
             background-size: cover;
             font-size: 26;
@@ -95,7 +95,7 @@
         .list-page {
             height: 150vh;
             width: 145vh;
-          
+
         }
 
         .table {
@@ -140,7 +140,7 @@
             document.getElementById("inputs").hidden = true;
             document.getElementById("studentData").hidden = false;
         }
-        window.onload = function () { entryFunction(); }
+         window.onload = function () { entryFunction(); }
 
         function clearFunction() {
             document.getElementById("formpage").innerHTML = "";
@@ -149,7 +149,7 @@
 </head>
 
 <body>
-    <!-- <div class="main"> -->
+     <!-- <div class="main"> -->
     <!-- main-container -->
     <div class="main-container" id="inputs">
         <!-- heading  -->
@@ -166,7 +166,7 @@
                 <button onclick="listFunction()" class="list"> LIST</button>
             </div>
             <!-- inputs -->
-            <div  class="inputs">
+            <div class="inputs">
                 <fieldset>
                     <h2> Enjoy Programming:Enter your Details</h2>
                     <br>
@@ -230,10 +230,10 @@
 
 
                         <!-- text area -->
-                        <label for="">tell somthing about yourself</label>
+                        <!-- <label for="">tell somthing about yourself</label>
                         <textarea name="textarea" id=" about self" cols="30" rows="10"> </textarea>
                         <br>
-                        <br>
+                        <br> -->
 
                         <!-- SUBMIT BUTTON -->
                         <button onclick=" clearFunction()">SUBMIT</button>
@@ -253,63 +253,30 @@
             <button onclick="listFunction()" class="list"> LIST</button>
         </div>
         <div class="table">
-            <table>
-                <!-- tr -->
+            <table>                <!-- tr -->
                 <tr>
                     <!-- table head -->
-                    <th >SR.NO.</th>
+                    <th>SR.NO.</th>
                     <th> FIRST NAME</th>
                     <th>LAST NAME</th>
                     <th>OWN LAPTOP</th>
-                    <th>thu</th>
-                    <th>fri</th>
-                    <th>sat</th>
-                    <th>sun</th>
-                </tr>
-
-                <!-- tr -->
-                <tr>
-                    <!-- th -->
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-
-                <tr>
-                    <!-- th -->
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th>DATE OF BIRTH</th>
+                    <th>E-MAIL</th>
+                    <th>CONTACT NO.</th>
+                  
                 </tr>
                 <tr>
-                    <!-- th -->
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <!-- th -->
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
+
+            
         </div>
 </body>
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        .main {
+            height: 150vh;
+            width: 180vh;
+            background-image: url(https://assets-global.website-files.com/64949e4863d96e26a1da8386/64b9451acbfc6601041a39fb_6282ca9b2d47e93fe13bd662_Form-20in-20Webflow.jpeg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+
+        .page-one {
+            height: 120vh;
+            width: 70%;
+            background-color: aliceblue;
+        }
+
+        .heading {
+            height: 15%;
+
+            width: 100%;
+        }
+
+        .head-one {
+
+            height: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+
+        }
+
+        .head-two {
+
+            height: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .buttons {
+            height: 80px;
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        button {
+            height: 60px;
+            width: 30%;
+            background-color: grey;
+        }
+
+        .page-two {
+            height: 150vh;
+            width: 180vh;
+            background-image: url(https://assets-global.website-files.com/64949e4863d96e26a1da8386/64b9451acbfc6601041a39fb_6282ca9b2d47e93fe13bd662_Form-20in-20Webflow.jpeg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+    </style>
+    <script>
+        function entryFunction() {
+            document.getElementById("page-one").hidden = false;
+            document.getElementById("page-two").hidden = true;
+
+        }
+
+
+        function listFunction() {
+            document.getElementById("page-one").hidden = true;
+            document.getElementById("page-two").hidden = false;
+
+        }
+        window.onload = function () { entryFunction(); }
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- MAIN -->
+    <div id="page-one" class="main">
+
+        <div class="page-one">
+            <div class="heading">
+                <div class="head-one">ENJOY PROGRAMMING</div>
+                <div class="head-two"> ADMISSION FORM</div>
+            </div>
+            <div class="buttons">
+
+                <button onclick="entryFunction()"> ENTRY</button>
+                <button onclick="listFunction()"> LIST</button>
+            </div>
+        </div>
+    </div>
+    </BR>
+
+    </BR>
+    <!-- page-two -->
+    <div id="page-two" class="page-two">
+        <div class="page-one">
+            <div class="heading">
+                <div class="head-one">ENJOY PROGRAMMING</div>
+                <div class="head-two"> ADMISSION FORM</div>
+            </div>
+            <div class="buttons">
+
+                <button onclick="entryFunction()"> ENTRY</button>
+                <button onclick="listFunction()"> LIST</button>
+            </div>
+        </div>
+</body>
+
+</html>
