@@ -1,252 +1,499 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- style -->
     <style>
-        /* main-container */
-        .main-container {
-            height: 450vh;
-            width: vw;
-            border: 2px black;
-            border-style: groove;
-            grid-template-rows: 3% 5% 7% 10% 6% 12% 10% 10% 10% 7%;
-            display: grid;
-            margin: 20px;
-            margin-top: 20px;
+        /* main */
+        .main {
+            height: 300vh;
+            width: 230vh;
+            /* background-color: gray; */
+        }
+
+        /* nav-one */
+        .nav-one {
+            height: 100px;
+            width: 100%;
+            background-color: wheat;
+            font-size: 50PX;
+            text-align: center;
 
         }
 
-        /* class-1 */
-        .class-one {
-            background-color: grey;
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-
-
-        }
-
-        /* class-2 */
-        .class-two {
-            background-color: #7fc7d9;
-            padding: 15px;
-
-            /* class-3*/
-        }
-
-        .class-three {
-            background-color: #2D9596;
-            padding: 15px;
-        }
-
-        /* class-4 */
-        .class-four {
-            background-color: #8ecddd;
-            padding: 15px;
-
-            /* class-5 */
-        }
-
-        .class-five {
-            background-color: #c7c8cc;
-            padding: 15px;
-
-        }
-
-        /* class-6 */
-        .class-six {
-            background-color: #9f70fd;
-            padding: 15px;
-        }
-
-        /* class-7 */
-        .class-seven {
-            background-color: #bb9cc0;
-            padding: 15px;
-        }
-
-        /* class-8 */
-        .class-eight {
-            background-color: #cac1d5;
-            padding: 15px;
-        }
-
-        /* class-9 */
-        .class-nine {
-            background-color: #25a0de;
-            padding: 15px;
-        }
-
-        /* styling for button */
-        button {
-            width: 90px;
-            height: 30px;
-            background-color: darkblue;
-            font-weight: 800;
-            margin: 5px;
-            border-radius: 20px;
+        /* nav-two */
+        .nav-two {
+            height: 60px;
+            width: 100%;
+            background-color: #1e1f22;
+            font-size: 50PX;
             color: white;
 
+            /* text-align: center; */
+
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            align-items: center;
+
+        }
+
+        .class-one {
+            height: 50px;
+            width: 100px;
+            background-color: aqua;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: aqua;
+            border-radius: 25px;
+            font-size: 16px;
+
+        }
+
+        .mail {
+            font-size: 22px;
+            width: 50%;
+
+        }
+
+        .buttons {
+            height: 40px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        /* line-one */
+        .line-one {
+
+            height: 420px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .l1-d1 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(58, 86, 110);
+            /* background-image: url(https://trivialab.files.wordpress.com/2022/09/post_feature_flex.webp); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+
+        }
+
+        .l1-d2 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        /* line-two */
+        .line-two {
+
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .l2-d1 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        .l2-d2 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        .l2-d3 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        /* line three */
+        .line-three {
+
+            height: 390px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .l3-d1 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        .l3-d2 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        .l3-d3 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        /* line-4 */
+        .line-four {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+
+        }
+
+        .l4-d1 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        .l4-d2 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        .l4-d3 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        /* line-5 */
+        .line-five {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+
+        }
+
+        .l5-d1 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        .l5-d2 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        .l5-d3 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        /* line six */
+        .line-six {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+
+        }
+
+        .l6-d1 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        .l6-d2 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        .l6-d3 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        /* line seven */
+        .line-seven {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+
+        }
+
+        .l7-d1 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
+        }
+
+        .l7-d2 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(35, 63, 87);
+            text-align: center;
+        }
+
+        .l7-d3 {
+            height: 100%;
+            width: 33%;
+            background-color: rgb(58, 86, 110);
+            text-align: center;
         }
     </style>
 </head>
+<!-- body -->
 
-<body >
-    <!-- main-container -->
-    <div class="main-container">
-        <!-- class-1 -->
-        <div class="class-one"><a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"><button>
-                    gitHub</button></a>
+<body>
+    <!-- main -->
+    <div class="main">
+        <!-- nav-one -->
+        <div class="possition">
+            <div class="nav-one">✌𝓔𝓝𝓙𝓞𝓨 𝓟𝓡𝓞𝓖𝓡𝓐𝓜𝓜𝓘𝓝𝓖✌</div>
+            <!-- nav-two -->
+            <div class="nav-two">
 
-            <a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"><button>
-                    linkedin</button></a>
-            <a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"><button>
-                    skype-id</button></a>
-            <a>
+                <div class="mail"> Name: Nisha Rahul chapke <br> gmail: nishawajge1995@gmail.com </div>
+                <div class="buttons">
+                  
+                 <button class="btn btn-outline-success"> <a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"></a>
+                        gitHub</button>
+
+                    <button class="btn btn-outline-success"> <a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"></a>
+                        linkedin</button>
+                    <button class="btn btn-outline-success"><a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"></a>
+                        skype-id</button>
+                    <a> 
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- line-one -->
+        <div class=" line-one ">
+            <!-- line-one-div-one -->
+            <div class="l1-d1">
+                <H2>MY GRID PROJECTS</H2>
                 <p>
-                    <h3 style="margin-bottom: 5px;">
-                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;nishawajge1995@gmail.com
-                    </h3>
+                <h3> <a href="gridproject/chessgrid.html"> CHESS BOARD</a></h3>
                 </p>
-            </a>
+                <p>
+                <h3> <a href="gridproject/layoutgridone.html"> LAYOUT-ONE</a></h3>
+                </p>
+                <p>
+                <h3> <a href="gridproject/gridlayouttwo.html"> LAYOUT-TWO</a></h3>
+                <img src="https://miro.medium.com/v2/resize:fit:1358/0*C8W3aR9H66rcj7Ml" height="200px" width="400px">
+                </p>
+            </div> &emsp;
+            <!-- line-one-div-two-->
+            <div class="l1-d2">
+                <h2> FLEX PROJECT</h2>
+                <p>
+                <h3><a href="flexproject/chessss.html"> CHESS BOARD</a>
+
+                </h3>
+                </p>
+                <p>
+                <h3><a href="flexproject/flexlayoutone.html"> FLEX LAYOUT ONE</a> </h3>
+                </p>
+                <p>
+                <h3><a href="flexproject/flexlayouttwo.html"> FLEX LAYOUT TWO</a> </h3>
+                </p>
+                <img src="https://miro.medium.com/v2/resize:fit:1082/1*OLorod4d77ZQwOhWTs7Jdw.png" height="200px"
+                    width="400px">
+            </div>
         </div>
+        <br>
+        <!-- line-two -->
+        <div class="line-two">
+            <!-- l2-d1  -->
+            <div class="l2-d1">
+                <h2> RESUME PROJECT</h2>
+                <p>
+                <h3> <a href="myressumee.html">MY RESUME</a></h3>
+                </p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEH0_ulnQ8XMruFPr-U0l5difBLNCF_3_mw&s"
+                    height="200px" width="300px">
+            </div> &emsp;
+            <!-- line-two-div-two-->
+            <div class="l2-d2">
+                <h2> CALANADER PROJECT</h2>
+                <p>
+                <h3> <a href="cal.html"> CALANDER ONE</a></h3>
+                </p>
+                <img src="https://img.freepik.com/free-vector/hand-drawn-annual-calendar-template_23-2149716984.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1713484800&semt=ais"
+                    height="200px" width="300px">
+            </div> &emsp;
+            <!-- line-two-div-three-->
+            <div class="l2-d3">
+                <h2> FORM PROJECT</h2>
+                <p>
+                <h3><a href="formm.html"> FORM PROJECT ONE</a></p>
+                </h3>
+                <img src="https://www.formsite.com/wp-content/uploads/2023/05/enrollment-form@2x.jpg" height="200px"
+                    width="300px">
+            </div>
+        </div>
+        <br>
+        <!-- line-three -->
+        <div class="line-three">
+            <!-- l3-d1  -->
+            <div class="l3-d1">
+                <h1> table projects</h1>
+                <p>
+                <h3><a href="tablemyt.html">YOUTUBE PAGE USING TABLE </a></h3>
+                </p>
 
-        <!-- class-2 -->
+                <p>
+                <h3><a href="resultsheettable.html"> RESULT SHEET TABLE</a></h3>
+                </p>
+                <img src="https://www.freecodecamp.org/news/content/images/2021/09/uide-to-writting-a-good-readme-file--7-.png"
+                    height="200px" width="300px">
+            </div> &emsp;
+            <!-- line-three-div-two-->
+            <div class="l3-d2">
+                <h2>KEYBOARD PROJECT</h2>
+                <h3> <a href="keyboard.html"> KEYBOARD ONE</a> </h3>
 
-        <div class="class-two">
-            <h1 style="color: blue; text-align: center; font-weight: 900;">My projects</h1>
+                <h3> <a href="keyboardtwo.html"> KEYBOARD TWO</a> </h3>
+
+                <img src="https://m.media-amazon.com/images/I/61TVlYCMoML._AC_UF1000,1000_QL80_.jpg" height="200px"
+                    width="300px">
+            </div> &emsp;
+            <!-- line-three-div-three-->
+            <div class="l3-d3">
+                <h2> MY LOTTARY PROJECT </h2>
+                <a href="lottary.html">
+                    <h3> LOTTARY PROJECT</h3>
+                </a>
+
+                <img src="https://media.licdn.com/dms/image/C4D12AQFXtJmz_Yq2VA/article-cover_image-shrink_720_1280/0/1629198964029?e=2147483647&v=beta&t=oE7Fn2J3tqQ5vnpht0S5V4MsIc9nKk2PKClRYEP9LCY"
+                    height="200px" width="300px">
+            </div>
+
 
         </div>
+        <br>
+        <!-- line-4 -->
 
-        <!-- class-3 -->
+        <div class="line-four">
+            <div class="l4-d1">
+                <h2> MATHE TABLES USING JS </h2>
+                <a href="mathtables.html">
+                    <h3> MATHE TABLE</h3>
+                </a>
+                <img src="https://play-lh.googleusercontent.com/Vp0VUQmigkTe53gZ7pD4MbbCtQdaodJYPhsttVRoRhYAWEgmjf0wRGvgrNkccStNIuY"
+                    height="200px" width="300px">
+            </div>&emsp;
+            <div class="l4-d2">
+                <h2> MY STAR PYRAMID PROJECT </h2>
+                <a href="star.html">
+                    <h3> STAR TABLE </h3>
+                </a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwugKVAHW-U0Yk4rabBURn3KDHoOkBuVN3GmxK718lAg&s"
+                    height="200px" width="300px">
+            </div>&emsp;
+            <div class="l4-d3">
+                <h2> MY EVEN-ODD PROJECT</h2>
 
-        <div class="class-three">
-            <h1>my resume</h1>
-            <p>
-            <h3> <a href="myressumee.html"> my ressume</a></h3>
-            </p>
+                <a href="evenOdd.html">
+                    <h3> EVEN ODD PROJECT</h3>
+                </a>
+                </h3>
+                <img src="https://i.ytimg.com/vi/NmIbmXTDbUc/sddefault.jpg" height="200px" width="300ps">
+            </div>
         </div>
-
-        <!-- class-4 -->
-
-        <div class="class-four">
-            <h1>grid projects: </h1>
-            <p>
-            <h3> <a href="gridproject/chessgrid.html"> chess board</a></h3>
-            </p>
-            <p>
-            <h3> <a href="gridproject/layoutgridone.html"> layout-one</a></h3>
-            </p>
-            <p>
-            <h3> <a href="gridproject/gridlayouttwo.html"> layout-two</a></h3>
-            </p>
+        <br>
+        <!-- line-5 -->
+        <div class="line-five">
+            <div class="l5-d1">
+                <h2> MY WEEK DAYS PROJECT </h2>
+                <a href="dayno.html">
+                    <h3> DAYS PROJECT </h3>
+                </a>
+                <img src="https://foolishdeveloper.com/wp-content/uploads/2022/04/Get-Day-Name-of-the-Week-in-JavaScript.jpg"
+                    height="200px" width="300ps">
+            </div>&emsp;
+            <div class="l5-d2">
+                <h2> VOWEL CONSONANT PROJRCT</h2>
+                <h3> <a href="vowelORconst.html"> VOWEL CONSONANT PROJRCT</a> </h3>
+                <img src="https://miro.medium.com/v2/resize:fit:278/1*E4u716o0tE6ijwL8Y2cGWw.png" height="200px"
+                    width="300px">
+            </div> &emsp;
+            <div class="l5-d3">
+                <h2> MY LEAP YEAR PROJECT</h2>
+                <h3> <a href="leap.html"> LEAP YEAR PROJRCT</a> </h3>
+                <img src="https://i.ytimg.com/vi/oklttmAzAQM/maxresdefault.jpg" height="200px" width="300px">
+            </div>
         </div>
-
-        <!-- class-5 -->
-
-        <div class="class-five">
-            <h1> form project</h1>
-            <p>
-            <h3><a href="formm.html"> form project one</a></p>
-            </h3>
+        <br>
+        <!-- line-six -->
+        <div class="line-six">
+            <div class="l6-d1"></div>&emsp;
+            <div class="l6-d2"></div>&emsp;
+            <div class="l6-d3"></div>
         </div>
-
-        <!-- class-6 -->
-
-        <div class="class-six">
-            <h1> flex project</h1>
-            <p>
-            <h3><a href="flexproject/chessss.html"> chess board</a> </h3>
-            </p>
-            <p>
-            <h3><a href="flexproject/flexlayoutone.html"> flex layout one</a> </h3>
-            </p>
-            <p>
-            <h3><a href="flexproject/flexlayouttwo.html"> flex layout two</a> </h3>
-            </p>
-            <p>
-            <h3><a href="flexproject/formm.html"> flex youtube page</a> </h3>
-            </p>
+        <br>
+        <!-- line-seven -->
+        <div class="line-seven">
+            <div class="l7-d1"></div>&emsp;
+            <div class="l7-d2"></div>&emsp;
+            <div class="l7-d3"></div>
         </div>
-        <!-- class-7 -->
-        <div class="class-seven">
-            <h1> table projects</h1>
-            <p>
-            <h3><a href="tablemyt.html"> youtube page using table </a></h3>
-            </p>
-
-            <p>
-            <h3><a href="resultsheettable.html"> result sheet table</a></h3>
-            </p>
-        </div>
-        <!-- class-8 -->
-
-        <div class="class-eight">
-            <h1> calander project</h1>
-            <p>
-            <h3> <a href="cal.html"> calander one</a></h3>
-            </p>
-        </div>
-        <!-- class-9 -->
-        <div class="class-nine">
-            <h1> keyboard project</h1>
-            <h3> <a href="keyboard.html"> Keybord One</a> </h3>
-            <br>
-            <br>
-            <h3> <a href="keyboardtwo.html"> Keybord Two</a> </h3>
-        </div>
-
-        <div class="class-three">
-            <h1> my calulator project </h1>
-            <a href="calculator.js.html">
-                <h3>calulator </h3>
-            </a>
-        </div>
-        <div class="class-four">
-            <h1> Mathes tables using javascript </h1>
-            <a href="mathtables.html">
-                <h3> Mathes Table</h3>
-            </a>
-        </div>
-
-
-        <div class="class-seven">
-            <h1> my star pyramide project </h1>
-            <a href="star.html">
-                <h3> Star tables </h3>
-            </a>
-        </div>
-        <div class="class-three">
-            <h1> my seven days project </h1>
-            <a href="dayno.html">
-                <h3> DAYS PROJECT </h3>
-            </a>
-        </div>
-        <div class="class-nine">
-            <h2> VOWEL CONSONANT PROJRCT</h2>
-            <h3> <a href="vowelORconst.html"> VOWEL CONSONANT PROJRCT</a> </h3>
-            <br>
-            <br>
-           
     </div>
-    <div class="class-five">
-        <h1> EVEN-ODD</h1>
-        <p>
-        <h3><a href="evenOdd.html"> evenOdd project</a></p>
-        </h3>
-    </div>
-    <div class="class-four">
-        <h1>ELECTRICITY BILL </h1>
-        <p>
-        <h3> <a href="electricitybill.html"> ELECTRICITY BILL PROJECT</a></h3>
-        </p>
-    </div>
-    </div>
-
 </body>
 
 </html>
