@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://t4.ftcdn.net/jpg/04/54/57/63/360_F_454576300_AN2dAthqhFl11iIoqHBgl3mpyXyzREnx.jpg);
+
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-control input,
+.form-control textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-control textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.status {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    </style>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Fetch form data
+    var formData = new FormData(this);
+    
+    // You can add form validation here if needed
+    
+    // Simulate sending the form data to a server (in this case, just log it to console)
+    console.log({
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+    });
+
+    // Display a success message
+    var statusElement = document.getElementById('status');
+    statusElement.innerHTML = '<p>Form submitted successfully!</p>';
+    this.reset(); // Reset the form
+
+    // Optional: Redirect to a thank you page or display a modal
+});
+
+    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-control">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="status" id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
