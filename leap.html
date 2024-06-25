@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* MAIN  */
+        .main {
+            background-color: gray;
+            height: 80vh;
+            width: 80vh;
+        }
+
+        /* DISPLAY */
+        .display {
+            height: 50%;
+            width: 100%;
+            background-color: rgb(46, 45, 45);
+            color: white;
+            text-align: center;
+            font-size: 36PX;
+        }
+
+        /*  KEYS AREA */
+        .keys {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            gap: 10px;
+
+        }
+
+        /* INPUT - ONE */
+        .input-one {
+            background-color: blueviolet;
+            height: 50px;
+            width: 80%;
+        }
+
+
+
+/* BUTTON */
+        .button {
+            background-color: aqua;
+            height: 50px;
+            width: 80%;
+        }
+    </style>
+    <!-- SCRIPT -->
+    <script>
+
+        function displayText() {
+            let x = document.getElementById("input").value;
+            if ((x % 400 == 0) && (x % 100 == !0) || (x % 4 == 0)) {
+                document.getElementById("display").innerHTML = " leap year";
+            }
+
+
+            else {
+                document.getElementById("display").innerHTML = "  not an leap year";
+            }
+        }
+    </script>
+
+</head>
+<!-- BODY -->
+<body>
+    <!-- MAIN -->
+    <div class="main">
+<!-- DISPLAY DIV -->
+        <div class="display" id="display"> </div>
+<!-- KEYS DIV -->
+        <div class=" keys">
+            <!-- INPUT -->
+            <input id="input" class="input-one" type="number" value="" />
+            <!--  BUTTON -->
+            <button onclick="displayText()" class="button"> CLICK ME</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
