@@ -47,32 +47,13 @@
         }
     </style>
     <script>
-        function displayText() {
-            //             let inputs = [];
-            //             let index = 0;
-            //             inputs = [11, 12, 13, 14, 15, 16, 17, 18, 18, 19, 10, 34, 234, 2345, 25, 25, 45, 3453, 234];
-            //             while (index < inputs.length) {
-            // let output = "array at "  + index +"is" + inputs[index];
-            // console.log( output);
-            // index ++;
-            //     
-       
-            let x = [];
-            for (let i = 0; i < 5; i++) {
-                let enter = prompt("enter no.");
-                x.push(enter);
+    const fruits = [ "banana", "orange","mango","papaya","kivi","watermalon"];
+        
+    
+     console.log( fruits);
 
-            }
-            let index = 0;
-            while (index < x.length) {
-                let output = "array at" + index + "is" + x[index];
-                console.log(output);
-                index++;
-            }
 
-        }
-        // console.log(  " the inputs are",inputs[0], inputs[1],inputs[2],inputs[3],inputs[4]);
-
+    
 
     </script>
 
@@ -85,6 +66,7 @@
 
         <div class=" keys">
             <input id="input" class="input-one" type="number" value="" />
+            <input id="inputTwo" class="input-one" type="number" value="" />
             <button onclick="displayText()" class="button"> CLICK ME</button>
 
         </div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-color: lightpink;
+            height: 80vh;
+            width: 100vh;
+        }
+
+        .display {
+            background-color: black;
+            width: 100%;
+            height: 50%;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .input-one {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            margin: 2%;
+
+        }
+
+        .input-two {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            margin: 2%;
+
+        }
+
+        .button {
+            height: 10%;
+            width: 80%;
+            background-color: violet;
+            font-size: 22px;
+            margin: 2%;
+
+        }
+    </style>
+
+    <script>
+        function tableMathe() {
+            //TABLE
+
+            // let x = document.getElementById("input-one").value;
+            // let y = 1;
+            // let output = 0;
+
+            // while (y <= 10) {
+            //     let output = x + "*" + y + "=" + x * y;
+
+
+            //     document.getElementById("display").innerHTML = output;
+            //     console.log(output);
+            //     y++;
+            // }
+//             let fruits = [ ];
+//             let output = "";
+//             let x = 0;
+//              fruits = [ "orange","papaya","banana","apple","mango","kivi","litchi"];
+// while( x<0 ) {
+
+//           output =  x + x[fruits];
+//           console.log(output);
+//           x++;
+//         }
+//     }
+
+let student= {}
+
+i =0;
+while(i<2){
+    student["firstname"]= prompt( " enter your first name ==");
+    student["lastname"]= prompt( " enter your last name ==");
+    console.log( student);
+    i++
+}
+
+let j = 0;
+while( j<student.length){
+    // console.log (" fist name is =", student.firstname + " last name is =", student.lastnames );
+   
+}
+console.log( student.firstname.j[0] );
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="display" class="display"></div>
+
+        <input id="input-one" class="input-one" type="number">
+
+        <button onclick="tableMathe()" class="button"> Clilck Me</button>
+    </div>
+</body>
+
+</html>

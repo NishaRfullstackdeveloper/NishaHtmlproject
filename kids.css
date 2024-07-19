@@ -1,0 +1,36 @@
+
+body {
+font-family: 'Comic Sans MS', cursive, sans-serif;
+background-color: #f0f8ff;
+color: #333;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+.header {
+background-color: #ffccf9;
+padding: 10px 0;
+}
+.header h1 {
+margin: 0;
+}
+.nav-bar {
+background-color: #ffd700;
+padding: 10px 0;
+}
+.nav-bar a {
+text-decoration: none;
+color: #333;
+margin: 0 20px;
+font-size: 24px;
+}
+.content {
+margin: 20px;
+}
+.footer {
+background-color: #ffccf9;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}

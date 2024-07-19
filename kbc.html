@@ -21,7 +21,10 @@
             background-color: blue;
             margin-left: 15%;
             color: white;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30%;
 
         }
 
@@ -34,9 +37,11 @@
             color: black;
             font-size: 26px;
 
+            border-radius: 20%;
 
         }
 
+        /* keys */
         .keys {
 
             height: 80%;
@@ -254,13 +259,13 @@
             else {
                 document.getElementById("display-text").innerHTML =
                     "  YOU ARE WINNER";
-                    startScreen();
+                startScreen();
             }
             // startScreen();
 
-           
+
         }
-          function answer(givenAnswer) {
+        function answer(givenAnswer) {
             if (questionNumber == 1) {
                 if (givenAnswer == 1) {
                     answerOne(true, 2);

@@ -10,13 +10,13 @@
         .main {
             height: 200vh;
             width: 200vh;
-      
+
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
-     
+
             align-items: center;
-            display: flex;
+
             flex-direction: column;
 
         }
@@ -25,7 +25,9 @@
         .main-container {
             height: 158vh;
             width: 150vh;
-            margin-top: 50px;
+            margin-top: 0%;
+            margin-left: 18%;
+
             /* background-color: rebeccapurple; */
 
         }
@@ -35,6 +37,7 @@
             height: 10%;
             /* background-color: aliceblue; */
             width: 100%;
+          
         }
 
         /* head one */
@@ -99,10 +102,13 @@
         }
 
         .table {
-            height: 80%;
+            height: 50px;
             width: 100%;
-            background-color: white;
+         margin-left: 20%;
+         margin-top: 5%;
             border: 2px black;
+          
+            color: black;
         }
 
         table,
@@ -124,15 +130,16 @@
         }
 
         .thth {
-            color: #f4f8f2;
+          
             height: 100px;
             width: 1000px;
         }
     </style>
-    <script>
-        // script
+    <!-- script -->
 
-        function entryFunction() {
+    <script>
+       
+       function entryFunction() {
             document.getElementById("inputs").hidden = false;
             document.getElementById("studentData").hidden = true;
         }
@@ -148,8 +155,9 @@
     </script>
 </head>
 
-<body>
-     <!-- <div class="main"> -->
+<body
+    style="background-image: url(https://e0.pxfuel.com/wallpapers/1000/464/desktop-wallpaper-login-page-larry-page-homepage-nexus-and-bing-homepage.jpg); background-repeat: no-repeat; background-size: cover;" >
+    <!-- <div class="main"> -->
     <!-- main-container -->
     <div class="main-container" id="inputs">
         <!-- heading  -->
@@ -166,30 +174,31 @@
                 <button onclick="listFunction()" class="list"> LIST</button>
             </div>
             <!-- inputs -->
-            <div class="inputs">
+            <div  id="input" class="inputs">
+                <form action="#" method="get">
                 <fieldset>
                     <h2> Enjoy Programming:Enter your Details</h2>
                     <br>
                     <!-- first name -->
                     <label for=" First name"> First name:&emsp;&emsp;</label>
-                    <input type="text" placeholder="enter your name">
+                    <input id="first-name" type="text" placeholder="enter your name">
                     <br>
                     <br>
                     <!-- last name -->
                     <label for="Last name"> Last name:&emsp;&emsp;</label>
-                    <input type="text" placeholder="ebter your last name">
+                    <input  id="last-name" type="text" placeholder="ebter your last name">
                     <br>
                     <br>
                     <!-- own laptop  -->
                     <h2>What laptop do you Own ?</h2>
                     <br>
 
-                    &emsp;&emsp;<input type="radio" name="type" value="Windows"> Windows
+                    &emsp;&emsp;<input  id="window" itype="radio" name="type" value="Windows"> Windows
                     <br>
-                    &emsp;&emsp;<input type="radio" name="type" value="Linux"> Linux
+                    &emsp;&emsp;<input id="linux" type="radio" name="type" value="Linux"> Linux
                     <br>
 
-                    &emsp;&emsp;<input type="radio" name="type" value="mac"> Mac
+                    &emsp;&emsp;<input id="mac" type="radio" name="type" value="mac"> Mac
                     <br>
                     <!-- education -->
 
@@ -245,7 +254,13 @@
     </div>
     </div>
     <!-- page2 -->
+   
+
     <div id="studentData" class="list-page">
+        <div class="heading">
+            <div class="head-one">ENJOY PROGRAMMING</div>
+            <div class="head-two"> ADMISSION FORM </div>
+        </div>
         <div class="button-line">
             <!-- entry button -->
             <button onclick="entryFunction()" class="entry">ENTRY</button>
@@ -253,7 +268,7 @@
             <button onclick="listFunction()" class="list"> LIST</button>
         </div>
         <div class="table">
-            <table>                <!-- tr -->
+            <table> <!-- tr -->
                 <tr>
                     <!-- table head -->
                     <th>SR.NO.</th>
@@ -263,11 +278,11 @@
                     <th>DATE OF BIRTH</th>
                     <th>E-MAIL</th>
                     <th>CONTACT NO.</th>
-                  
+
                 </tr>
                 <tr>
                     <td></td>
-                    <td></td>
+                    <td id="firstName"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -276,7 +291,7 @@
                 </tr>
             </table>
 
-            
+
         </div>
 </body>
 

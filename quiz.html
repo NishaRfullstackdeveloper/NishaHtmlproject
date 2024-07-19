@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KBC Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to KBC!</h1>
+  <div id="question"></div>
+  <div id="options"></div>
+  <button onclick="checkAnswer()">Submit Answer</button>
+  <script>
+    const questions = [
+      {
+        question: "What is the capital of France?",
+        options: ["Paris", "London", "Berlin", "Madrid"],
+        answer: "Paris"
+      },
+      {
+        question: "Who wrote 'Romeo and Juliet'?",
+        options: ["William Shakespeare", "Charles Dickens", "Jane Austen", "Leo Tolstoy"],
+        answer: "William Shakespeare"
+      },
+      // Add more questions here
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function displayQuestion() {
+      const currentQuestion = questions[currentQuestionIndex];
+      document.getElementById('question').innerText = currentQuestion.question;
+
+      const optionsHTML = currentQuestion.options.map(option =>
+        `<input type="radio" name="answer" value="${option}">${option}<br>`
+      ).join('');
+      document.getElementById('options').innerHTML = optionsHTML;
+    }
+
+    function checkAnswer() {
+      const selectedOption = document.querySelector('input[name="answer"]:checked');
+      if (!selectedOption) {
+        alert("Please select an option!");
+        return;
+      }
+
+      const userAnswer = selectedOption.value;
+      const correctAnswer = questions[currentQuestionIndex].answer;
+
+      if (userAnswer === correctAnswer) {
+        score++;
+        alert("Correct answer! Your score: " + score);
+      } else {
+        alert("Wrong answer! The correct answer is: " + correctAnswer);
+      }
+
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
+        displayQuestion();
+      } else {
+        alert("Game Over! Your final score: " + score);
+        // Optionally, you can restart the game here
+      }
+    }
+
+    // Display the first question when the page loads
+    displayQuestion();
+  </script>
+</body>
+</html>

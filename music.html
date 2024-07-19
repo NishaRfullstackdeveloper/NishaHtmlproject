@@ -3,48 +3,79 @@
 
 <head>
     <style>
-        .main-container{
+        .main-container {
             background-image: url(https://img.freepik.com/free-vector/musical-notes-pattern-black-background_1017-32303.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1710288000&semt=ais);
-       
-       height: 100vh;
-    width: 200vh;
-display: flex;
-justify-content: center; 
-align-items: center;}
-            .main{
-                height: 90vh;
-                width: 100vh;
-                background-color: aqua;
-                background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/music-logo%2C-guitar-logo%2C-music-3d-gold-logo-design-template-2251cca626acda3bea3ce36dbd68b3d2_screen.jpg?ts=1678649321);
-            }
-            #letsPlay{
-                height: 50px;
-                width: 150px;
-              
-            }
-            #letsStop{
-                height: 50px;
-                width: 150px;
-            }
-            #display{
-                height: 20%;
-                width: 100%;
-                background-color: rgba(red, green, blue, alpha);
-            }
-    </style>
-<script>
 
-</script>
+            height: 100vh;
+            width: 200vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            box-shadow: 10px 10px 10px 10px #3b3939;
+            height: 80vh;
+            width: 80vh;
+            background-color: aqua;
+            background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/music-logo%2C-guitar-logo%2C-music-3d-gold-logo-design-template-2251cca626acda3bea3ce36dbd68b3d2_screen.jpg?ts=1678649321);
+        }
+
+        #letsPlay {
+            height: 50px;
+            width: 200px;
+            background-color: #040303;
+            color: white;
+            font-size: 20px;
+        }
+
+        #letsStop {
+            height: 50px;
+            width: 200px;
+            background-color: #040303;
+            color: white;
+            font-size: 20px;
+        }
+
+        #display {
+            height: 60%;
+            width: 100%;
+            background-color: rgba(red, green, blue, alpha);
+        }
+
+        .buttonpage {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+    <script>
+        function playMusic() {
+          
+            document.getElementById("myAudio").play() = audio;
+        }
+
+        function stopMusic(){
+            document.getElementById("myAudio").pause() = ;
+        }
+    </script>
 </head>
 
-<body> 
+<body>
     <div class="main-container">
-       <div class="main"> 
-<div id="display"></div>
+        <audio id="myAudio"  > <source src="/Users/enjoy_17_b/Documents/myprojects/myimages/128-Banda - Dunki 128 Kbps.mp3" type="audio/mp3"></audio>
+        <div class="main">
+            <div id="display"></div>
+            <div class="buttonpage">
+                <button onclick="playMusic()" id="letsPlay"> Lets Play</button>
+                <button onclick="stopMusic()" id="letsStop"> Stop</button>
 
-        <button onclick="playMusic" id="letsPlay" > Lets Play</button>
-        <button onclick="stopMusic" id="letsStop" > Stop</button>
-       </div>
+            </div>
+        </div>
     </div>
-    </body>
+</body>
+
 </html>

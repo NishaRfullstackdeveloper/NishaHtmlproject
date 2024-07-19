@@ -7,7 +7,7 @@
     <!-- styling css -->
     <style>
 .main{
-height: 110vh;
+height: 90vh;
 width: 100%;
 background-color:orchid ;
 display: flex;
@@ -19,37 +19,54 @@ flex-direction: row;
     width: 33%;
     background-color: rgb(125, 112, 45);
     text-align: center;
+  
   }
-
+/* box_two */
 
 .box_two{
     height: 100%;
     width: 33%;
     background-color: aqua;
     text-align: center;
- 
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ grid-template-rows: 1fr 2fr 2fr 2fr;
 }
-
+/* grid_box */
+.grid_box{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(117, 13, 13);
+    align-items: center;
+    margin: 10%;
+    color: white;
+    margin-top: 5%;
+}
+/* box_three */
 .box_three{
     height: 100%;
     width: 34%;
     background-color: rgb(66, 71, 71);
     text-align: center;
+    display: grid;
+    grid-template-rows: ;
   
 }
-
+/*  */
 table{
     border: black 2px;
 }
 
 .flx_box{
-    height: 80%;
+    height: 100%;
     width: 80%;
     background-color: rgb(4, 4, 4);
     align-items: center;
-    margin: 10%;
+    /* margin: 10%; */
     color: white;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 input{
     height: 5%;
@@ -58,6 +75,7 @@ border-color: blue;
 display: flex;
 flex-direction: row;
 margin-top: 10%;
+color: white;
 background-color: transparent;
 
 margin-left: 30%;
@@ -71,39 +89,58 @@ margin-left: 30%;
 button{
     height: 10%;
     width: 30%;
-    background-color: transparent;
+    background-color: #399918;
+    margin-top: 10%;
 
 }
+.div_one{
+    width: 100%;
+    background-color: #399918;
+}
+
 </style>
 </head>
 <body>
+    <!-- MAIN -->
     <div class="main">
+        <!-- BOX_ONE -->
 <div class="box_one"> <h1>TABLE</h1>
 <div>
-<table>
 
-</table>
 
 </div>
 </div>
+<!-- BOX_TWO -->
 <div class="box_two"> <H1>FLEX</H1>
+    <!-- FLEX_BOX  -->
 <div class="flx_box">
+    <!-- LOGIN AREA -->
     <div class="login">
 <h1 style="text-overflow: ellipsis;">LOG IN</h1>
 </div>
 <br>
 plase enter your login and password.
 <br>
+<!-- INPUTS -->
 <input type="text" placeholder="username">
 <br>
 <input type="text" placeholder="password">
 <h5 style="text-decoration-line: underline;"> forgette password</h5>
 
 <!-- button -->
-<button></button>
+<button>    login</button>
 </div>
 </div>
-<div class="box_three"><H1>GRID</H1></div>
+<!-- BOX_THREE -->
+<div class="box_three"><H1>GRID</H1>
+<div class="grid_box">
+<div class="div_one"></div>
+<div class="div-two"></div>
+<div class="div-three"></div>
+<div class="div-four"></div>
+<div  class="div-five"></div>
+</div>
+</div>
     </div>
 </body>
 </html>

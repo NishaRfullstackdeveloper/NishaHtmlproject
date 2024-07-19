@@ -32,24 +32,45 @@
    </style>
 
         <script>
-            
-  let age = prompt( " your age ?");
-  let x = document.getElementById("input").value;
+            function helloFunction(){
+    //    let student = { name: "nisha wajge", lastname: "wajge", address: "katol,mharastra", rollno: 122, 
+        
+    
+    // console.log( " the name is" + student.name 
+    // + " last name"
+    //  +  student.lastname   
+    //  +  "address"+  student.address);
+    let student = {};
+    let  Arrayofstudent ={};
+    let i= 0;
+    while ( i<3){
 
-  document.getElementById("display").innerHTML = " ELIGIBLE FOR VOTE";
-  document.getElementById("display").innerHTML = "  NOT ELIGIBLE FOR VOTE";
-  
+student ["firstname"] = prompt( "enter student name");
+student [" lastname"]= prompt( "enter student last name");
+ console.log( student );
+ Arrayofstudent.push( student);
+i++;
+
+    }
+let j = 0;
+while( j<student.length){
+
+    console.log(   " ");
+    j++;
+}
+
+            }
 
         </script>
     </head>
 <body>
     <div class="main">
 
-         <div class="display"></div>
+         <div  id="display" class="display"></div>
 
-         <input class="input" type="number"/>
+         <input id="input" class="input" type="number"/>
 
-         <button class="button"> Clilck Me</button>
+         <button onclick="helloFunction()" class="button"> Clilck Me</button>
     </div>
 </body>
 
