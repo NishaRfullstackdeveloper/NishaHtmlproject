@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html Document</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 200vh;
+            width: 100vw;
+        
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        /* projects */
+        .content {
+            height: 90%;
+            color: black;
+            background-color: #010001;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+        }
+
+        /* row-one */
+        .row-one {
+            background-color: black;
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            gap: 5vh;
+            margin-top: 5vh;
+           
+        }
+
+        /* row-two */
+        .row-two {
+            background-color: black;
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            gap: 5vh;
+            margin-top: 5vh;
+        }
+
+        /* row-three */
+        .row-three {
+            background-color:black;
+            height: 25%;
+            display: flex;
+            flex-direction: row;
+            gap: 5vh;
+            margin-top: 5vh;
+        }
+
+        /* project-one */
+        .prj-one {
+            border: 2px black;
+            border-style: groove;
+            width: 33%;
+            
+        }
+
+        /* project-two */
+        .prj-two {
+            border: 2px black;
+            border-style: groove;
+            width: 34%;
+        }
+
+        /* project-three */
+        .prj-three {
+            border: 2px black;
+            border-style: groove;
+            width: 33%;
+        }
+
+        img {
+            filter: grayscale(50%);
+            box-shadow: 10px 10px 10px rgb(39, 25, 91);
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<!-- body-start -->
+
+<body>
+    <!-- main -->
+    <div class="main">
+        <!-- main-container -->
+        <div class="main-container ">
+            <div class="col-12" style="background-color: rgb(0, 4, 255); height: 10%; text-align: center;">
+                <h1>MY BOOTSTRAP PROJECTS</h1>
+            </div>
+            <!-- projects -->
+            <div class="content">
+                <!-- row-one -->
+                <div class="row-one">
+                    <!-- project one -->
+                    <div class="prj-one" >
+                      <!-- bootstrap layout -->
+                      <h2> bootstrap layout</h2>
+                      <img src="data:image/png;base64,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"  height="150vh" width="200vw">
+                    <h3>  <a href="./boot.layout.html"> Bootstrap Layout </a></h3>
+                    </div>
+                    <!-- project two -->
+                    <div class="prj-two">
+                        <!-- cake shop website -->
+                        <h2>Cake Shop</h2>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEfKunV-d3qCzSRXrmQShJIf2E3bJSBY1tg&s"
+                            height="150vh" width="200vw">
+                        <h3><a href="cake_shop.html"> Cake Library</a></h3>
+                    </div>
+                    <!-- project three -->
+                    <div class="prj-three">
+                      
+                    </div>
+                </div>
+                <!-- row-two -->
+                <div class="row-two">
+                    <!-- project one -->
+                    <div class="prj-one">
+
+                     
+                    </div>
+                    <!-- project two -->
+                    <div class="prj-two">
+                    </div>
+                    <!-- project three -->
+                    <div class="prj-three"></div>
+
+                </div>
+                <!-- row three -->
+                <div class="row-three">
+                    <!-- project one -->
+                    <div class="prj-one"></div>
+                    <!-- project two -->
+                    <div class="prj-two"></div>
+                    <!-- project three -->
+                    <div class="prj-three"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
