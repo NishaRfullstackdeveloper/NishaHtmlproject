@@ -13,42 +13,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- title -->
   <title>barbers</title>
+
+  <style>
+    .single-img {
+      height: 100vh;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      background-repeat: no-repeat;
+      color: azure;
+      background-size: cover;
+      padding: 15vh;
+      display: flex;
+      justify-content: center;
+      background-image: url(https://www.shutterstock.com/image-photo/barber-cutting-hair-scissors-back-600nw-380377951.jpg);
+    }
+
+    .pricing {
+      height: 110vh;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+      background-repeat: no-repeat;
+      color: azure;
+      background-size: cover;
+      padding: 15vh;
+      display: flex;
+      justify-content: center;
+      background-image: url('https://zolmi.com/assets/img/zb/learn/barber-shop-price-list-free-template.png');
+    }
+
+  </style>
 </head>
 
 <body>
   <!-- navbar  -->
-  <header style="background-color: black;" class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+  <header style="background-color: black; " class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <svg class="bi me-2" width="40" height="32">
         <use xlink:href="#bootstrap"></use>
       </svg>
-      <span style="color: white;" class="fs-4">Simple header</span>
+      <span style="color: white; font-weight: 500;" class="fs-4">Barber </span>
+<br><hr>
+      <span style="color: white; font-weight: 500;" class="fs-4"> Shop</span>
     </a>
 
     <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+      <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+      <li class="nav-item"><a href="#pirukar" class="nav-link">FAQs</a></li>
+      <li class="nav-item"><a href="#hairwash" class="nav-link">About</a></li>
     </ul>
   </header>
   <!-- carousel -->
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
+  <div  id="carouselExample" class="carousel slide"  >
+    <div id="home" class="carousel-inner">
       <div class="carousel-item active">
 
-        <img src="https://www.shutterstock.com/image-photo/modern-empty-barbershop-interior-chairs-600nw-1689368557.jpg"
+        <img src="https://www.shutterstock.com/image-illustration/3d-wallpaper-showing-set-barber-600nw-2192452129.jpg"
           class="d-block w-100" <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Short title, long jacket</h3> >
       </div>
       <div class="carousel-item">
         <img
-          src="https://media.istockphoto.com/id/1973194125/photo/hairdresser-shaping-eyebrows-of-man-client-using-razor-in-barbershop.webp?b=1&s=170667a&w=0&k=20&c=FRGDTEjaACMdBgKAR68ADIL6zCPcOZko8P2QMI5K-KY="
+          src="https://img.freepik.com/free-photo/barber-wallpaper-black-marble-background_53876-145654.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721692800&semt=ais_user"
           class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img
-          src="https://www.shutterstock.com/shutterstock/videos/1054318163/thumb/1.jpg?ip=x480";
+        <img src="https://www.avikalp.com/cdn/shop/products/MWZ3631_wallpaper3.jpg?v=1654843550" ;
           class="d-block w-100" alt="...">
       </div>
     </div>
@@ -63,19 +95,19 @@
   </div>
 
   <!--  image box -->
- 
-  <div  style="background-color: black;" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-  
+
+  <div id="hairwash" style="background-color: black;" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
     <div class="col">
       <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
         style="background-image: url('https://static1.squarespace.com/static/583c809359cc68a8c3c530c9/59eea9f880bd5e36ab32109f/6450da30d9fd6d74b928684e/1689829689839/Do+Barber+Shops+Cut+Long+Hair.jpg?format=1500w');  background-repeat: no-repeat; background-size: cover;">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
           <h3 style="text-align: center; color: brown;" class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair Cut</h3>
-          
+
         </div>
       </div>
     </div>
-<!-- image two -->
+    <!-- image two -->
     <div class="col">
       <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
         style="background-image: url('https://www.thebrightonbeardcompany.co.uk/cdn/shop/articles/bears-shave_grande.jpg?v=1583510047') ; background-repeat: no-repeat; background-size: cover;">
@@ -84,34 +116,34 @@
           <hr>
           <h4 style="color: brown;">“Shaving Your Beard Is Like Golfing at Night You Will Surely Lose Your Balls.”
           </h4>
-        
-            
+
+
         </div>
       </div>
     </div>
-<!-- image three -->
+    <!-- image three -->
     <div class="col">
       <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
         style="background-image: url('https://productimages.withfloats.com/serviceimages/tile/63443192644f62a9a89090bbhair%20wash%20mens');  background-repeat: no-repeat; background-size: cover;">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h3 style="text-align: center; color: brown;" class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair Wash 
+          <h3 style="text-align: center; color: brown;" class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair Wash
 
           </h3>
-        
+
         </div>
       </div>
     </div>
   </div>
-  <!--  -->
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  <!-- pirukar barber shop  -->
+  <div id="pirukar" style="background-color:black" class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
       <img
         src="https://content.jdmagicbox.com/comp/palakkad/p4/9999px491.x491.220804150859.z9p4/catalogue/-5bm17w4nl7.jpg"
         class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
     </div>
-    <div class="col-lg-6">
+    <div style="color: azure;" class="col-lg-6">
       <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Pirukar Barber Shop</h1>
-      <p class="lead">Come experience a unique and edgy barbershop for all your hair and beard needs. ravida haretra
+      <p class="lead" >Come experience a unique and edgy barbershop for all your hair and beard needs. ravida haretra
         nuam enim mi obortis eset uctus enec accumsan eu justo alisuame amet auctor orci donec vitae vehicula risus.
 
         Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet auctor
@@ -129,47 +161,137 @@
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
       </div>
     </div>
+    <div style="background-color: #FFD3B6;" class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#toggles2"></use>
+          </svg>
+        </div>
+        <div>
+          <h2 class="fs-2 text-body-emphasis">Cuts</h2>
+          <p>The more attention a person pays to their hair, the more vocal their hair become.
+            Hair is one of the key components of a person's aesthetic as it not only enhances your appearance but makes you look more spick and span. .</p>
+          </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#cpu-fill"></use>
+          </svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Fades</h3>
+          <p>Nevertheless, a fade haircut is great for any occasion and any workplace. You can go subtle for a clean and classy look or go bold for an edgy look. Your haircut creates a statement for you.</p>
+          
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#tools"></use>
+          </svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Shaves</h3>
+          <p>Shaving after showering makes it easy for a straight razor to glide over for a close shave. There will be less tugging and pulling of hair roots, exfoliation happens because a warm shower removes excess oils and dead skin cells which help make a close shave.</p>
+          
+        </div>
+      </div>
+    </div>
+    <!--  -->
+  
+    <div class="single-img" >
+      <i class="bi bi-star"></i>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+        viewBox="0 0 16 16">
+        <path
+          d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+      </svg>
+      <h3 style="align-items: center;">When you're feeling confident and ready to share your new hairstyle with the world,
+        don't forget about using the best haircut captions for Instagram! ‍These captions are perfect for sharing your
+        look with friends and followers on social media. ‍
+      </h3>
+      <br><br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCPC7u6YIyeVaS_cT1QhroZHHBsZ4Y6_OA4g&s" alt=""
+        style="border-radius: 50%;" height="80vh" width="80vw">
+    </div>
+  
+    <!--  -->
+    <!--  our features -->
+    <div 
+       style="background-image: url(https://media.istockphoto.com/id/874475124/photo/background-black-and-white-in-half.jpg?s=170667a&w=0&k=20&c=mnJlxhPPKS6n9VYzRnGfDNe-vbvqltK0qk9LGZ7dplo=); background-size: cover; background-repeat: no-repeat;"
+      class="container px-4 py-5" id="custom-cards">
+      <p style="text-align: center; color: azure;">FIRST-CLASS</p>
+      <h2 class="pb-2 border-bottom" style="text-align: center; color: azure;"> oUR fEATURES</h2>
+      <!-- img-one -->
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div id="features" class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIK2fJMKdIbC7MHQpyWFvOGAVQFSeAW_VCQ&s'); background-repeat: no-repeat; background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Groom's Shave</h3>
+            </div>
+          </div>
+        </div>
+        <!-- img-two -->
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://img.freepik.com/free-photo/kid-getting-haircut-salon-front-view_23-2149870370.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721865600&semt=ais_user'); background-repeat: no-repeat; background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Kids Cut</h3>
+            </div>
+          </div>
+        </div>
+        <!-- img-three -->
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://marketplace.canva.com/EAFzl_fI3WU/1/0/1600w/canva-red-and-black-illustrative-barber-shop-logo-A5183UnPgkI.jpg');  background-repeat: no-repeat; background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Creative barbers</h3>
+            </div>
+          
+        </div>
+      </div>
+  
+    </div>
   </div>
 
-  <!--  -->
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-    <div class="col d-flex align-items-start">
-      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
-      </div>
-      <div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary">
-          Primary button
-        </a>
+        
       </div>
     </div>
-    <div class="col d-flex align-items-start">
-      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
-      </div>
-      <div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
-      </div>
-      <div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-        <a href="#" class="btn btn-primary">
-          Primary button
-        </a>
-      </div>
-    </div>
+
+  <!-- pricing -->
+  <div id="pricing" class="pricing">
+
   </div>
+  </div> 
+  <!-- FOOTER-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="my_image/facebook.svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="my_image/twitter (1).svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+
+</div>
 </body>
 
 </html>
