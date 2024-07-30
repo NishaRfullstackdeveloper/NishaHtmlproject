@@ -151,3 +151,16 @@ text-decoration: none;
   .hello:hover {
     background-color: rgb(55, 52, 54);
   }
+
+  @media only screen and (max-width: 600px) {
+    .one {
+     font-size: 7vh;
+     margin-top: 10vh;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .anchor-tag {
+    font-size: 18px;
+    }
+  }
