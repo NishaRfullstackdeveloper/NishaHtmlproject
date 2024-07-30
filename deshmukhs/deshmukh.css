@@ -1,7 +1,7 @@
 .main-container{
-    height: 120vh;
+    height: 100vh;
     /* background-color: #1dab69; */
-    background-image: url(https://t4.ftcdn.net/jpg/06/05/71/05/360_F_605710587_sm3dKSiUn4TLOEdI7RBx6DLsuNuRRvHN.jpg);
+    background-image: url(https://img.freepik.com/free-photo/dark-style-valentines-day-celebration_23-2151133859.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -32,10 +32,15 @@ background-size: cover;
     color: rgb(222, 199, 19);
     font-size: 4.5rem;
     text-align: center;
-    font-family: "Great Vibes", cursive;
-  font-weight: 500;
+
+  font-weight: 400;
   font-style: normal;
   align-items: center;
+  
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
@@ -77,7 +82,7 @@ background-size: cover;
     flex-direction: column;
     justify-content:center ;
     align-items: center;
-gap: 2vh;
+
 
 font-size: 1.2rem;
 
@@ -87,16 +92,14 @@ font-size: 1.2rem;
      background-color: #FFAAAA; 
      text-align: center;
 height: 6vh;
-width: 20vh;
-border-radius: 1vh;
+width: 15vh;
 font-size: 1.2rem;
 gap: 2vh;
-text-decoration: none;
 }
 
 .down-side{
 
-    height: 130vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -110,7 +113,7 @@ text-decoration: none;
     height: 32%;
 
     width: 25%;
-    background-color: #ffaaaa46;
+    background-color: #FFAAAA;
     background-image: url(https://i.pinimg.com/originals/4b/12/84/4b1284c8990876e5bbb0f126428ee3c0.jpg);
     background-repeat: no-repeat;
     background-size: cover;

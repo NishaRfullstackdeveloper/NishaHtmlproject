@@ -1,0 +1,143 @@
+.main-container{
+    height: 120vh;
+    /* background-color: #1dab69; */
+    background-image: url(https://t4.ftcdn.net/jpg/06/05/71/05/360_F_605710587_sm3dKSiUn4TLOEdI7RBx6DLsuNuRRvHN.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.mainn {
+
+    height: 100vh;
+    background-color: #b88e12;
+    width: 100%;
+   background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url('https://image.slidesdocs.com/responsive-images/background/experience-the-beauty-of-4k-high-resolution-decorative-wall-texture-with-realistic-3d-rendering-gorgeous-wallpaper-(120)-powerpoint-background_0717da8e29__960_540.jpg'); */
+  
+}
+.shruti{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5vh;
+  
+}
+
+.one {
+    height: 25vh;
+    color: rgb(222, 199, 19);
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  font-style: normal;
+  align-items: center;
+
+}
+
+.two {
+    height: 10vh;
+    /* background-color: rgb(0, 255, 21); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+   
+}
+
+.three {
+    height: 10vh;
+    /* background-color: rgb(255, 115, 0); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+
+  
+}
+
+.image{
+    /* background-color: yellowgreen; */
+    height: 90vh;
+}
+.boxes{
+    /* background-color: rgb(67, 43, 119);  */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+gap: 2vh;
+
+font-size: 1.2rem;
+
+}
+
+.link-box{
+     background-color: #FFAAAA; 
+     text-align: center;
+height: 6vh;
+width: 20vh;
+border-radius: 1vh;
+font-size: 1.2rem;
+gap: 2vh;
+text-decoration: none;
+}
+
+.down-side{
+
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.sub-insta{
+    height: 32%;
+
+    width: 25%;
+    background-color: #ffaaaa46;
+    background-image: url(https://i.pinimg.com/originals/4b/12/84/4b1284c8990876e5bbb0f126428ee3c0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-roboto{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  
+}
+/* portfolio page styling */
+
+.container {
+
+    height: 250vh;
+    width: 100%;
+    /* background-image: url('https://image.slidesdocs.com/responsive-images/background/experience-the-beauty-of-4k-high-resolution-decorative-wall-texture-with-realistic-3d-rendering-gorgeous-wallpaper-(120)-powerpoint-background_0717da8e29__960_540.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.anchor-tag{
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
