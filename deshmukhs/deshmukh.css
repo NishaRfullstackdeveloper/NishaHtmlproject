@@ -1,7 +1,7 @@
 .main-container{
     height: 120vh;
     /* background-color: #1dab69; */
-    background-image: url(https://t4.ftcdn.net/jpg/06/05/71/05/360_F_605710587_sm3dKSiUn4TLOEdI7RBx6DLsuNuRRvHN.jpg);
+    background-image: url(https://www.shopify.com/stock-photos/photos/beauty-products-makeup-brush-and-powders/download);
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -36,6 +36,7 @@ background-size: cover;
   font-weight: 500;
   font-style: normal;
   align-items: center;
+  filter: drop-shadow(2px 2px 2px red);
   
 
 
@@ -146,7 +147,8 @@ text-decoration: none;
 }
 
 .anchor-tag:hover {
-    background-color: rgb(255, 0, 132);
+    text-decoration: underline red;
+    font-size: 1.8rem;
   }
   .hello:hover {
     background-color: rgb(55, 52, 54);
@@ -163,4 +165,16 @@ text-decoration: none;
     .anchor-tag {
     font-size: 18px;
     }
+  }
+
+  .icon{
+background-color: none;
+  }
+
+  .icon:hover{
+color: #b88e12;
+transform: scale(1.5);
+background-color:#021526;
+border-radius: 15%;
+
   }
