@@ -40,7 +40,10 @@
       border-radius: 15px;
       /* background-image: url(https://media.istockphoto.com/id/1472965266/video/moving-circles-with-little-rhombus-dots-on-transparent-background.jpg?b=1&s=640x640&k=20&c=n6nGEblsSkOH3sO4-FCw4xmSJyHq3vDM0tyk5fU4i-0=); */
     }
-
+.links{
+  height: 100%;
+  width: 30%;
+}
     .enjoy {
       height: 15%;
       width: 100%;
@@ -100,8 +103,6 @@
 
       height: 200px;
       width: 200px;
-
-     /* background-image: url(/Users/enjoy_17_b/Documents/myprojects/gridproject/image/nisha.jpg); */
       border-radius: 50%;
     }
 
@@ -125,7 +126,7 @@
       height: 33%;
       margin-top: 55px;
       font-weight: 1000;
-      font-size: 90px;
+      font-size: 5vw;
       text-align: center;
       color: #06D001;
       display: flex;
@@ -185,9 +186,29 @@
       background-color: blue;
       border-radius: 25px;
       color: white;
-      height: 50PX;
-      width: 150PX;
+      height: 7vh;
+      width: 10vw;
     }
+
+    @media only screen and (max-width: 600px) {
+  body {
+    .welcome{
+  
+    font-size:26px;
+    color: orangered
+    }
+  }
+}
+
+@media only screen and (max-width: 853px) {
+  body {
+    .welcome{
+  
+    font-size:26px;
+    color: orangered
+    }
+  }
+}
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,18 +224,23 @@
       <!-- navbar -->
       <div class="enjoy">
         <!-- text-ennjoyprogramming -->
-        <div class="enj-prog">
+        <div class="enj-prog col-md-4">
           <i class="bi bi-house-door-fill" style="height: 100vh; width: 100vw;"></i>
           enjoy <br> programming
         </div>
 
         <!-- links-box -->
-        <div class="git-skype">
+        <div class="git-skype  col-md-4">
           <i class="bi bi-envelope"> : nishawajge1995@gamil.com</i>
+          <!-- links -->
+          <div class= " links  col-md-4">
+            <!-- github icon -->
           <a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"> <i class="bi bi-github"></i></a>
+          <!-- linkedin icon -->
           <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"> <i class="bi bi-linkedin"></i></a>
+          <!-- skype icon -->
           <a href="https://www.skype.com/en" ><i class="bi bi-skype"></i></a>
-
+        </div>
         </div>
       </div>
       <!-- botton-area -->
@@ -261,7 +287,7 @@
           <!-- photo -->
           <div class="photo-back">
             <div class="photo">
-              <img src="./my_image/nisha.jpg" height="200px" width="200px" style="border-radius: 50%;"/>
+              <img src="./my_image/nisha.jpg" height="120vh" width="120vw" style="border-radius: 50%;"/>
             </div>
 
           </div>
@@ -277,6 +303,10 @@
     </div>
   </div>
 
+
+
+  <!-- htmlpage -->
+  
 </body>
 
 
