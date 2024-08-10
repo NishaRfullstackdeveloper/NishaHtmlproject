@@ -1,313 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <!-- bootstrap html -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+.box-size{
+  height: 45vh;
+}      
+      /* Set height of body and the document to 100% */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial;
+      }
 
-  <!--  -->
-  <!-- Option 1: Include in HTML -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <!-- bootstap- html -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- bootstarp-link -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <style>
-    .main-box {
+      /* Style tab links */
+      .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+      }
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: azure;
-      width: 100vw;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(https://img3.wallspic.com/previews/0/6/2/5/7/175260/175260-atmosphere-violet-purple-magenta-electric_blue-550x310.jpg);
-    }
+      .tablink:hover {
+        background-color: #777;
+      }
 
-    .sub-box {
-      height: 80%;
+      /* Style the tab content (and add height:100% for full page content) */
+      .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: auto;
+      }
 
-      filter: grayscale(50%);
-      box-shadow: 15px 15px royalblue;
-      background-color: black;
-      width: 80%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 15px;
-      /* background-image: url(https://media.istockphoto.com/id/1472965266/video/moving-circles-with-little-rhombus-dots-on-transparent-background.jpg?b=1&s=640x640&k=20&c=n6nGEblsSkOH3sO4-FCw4xmSJyHq3vDM0tyk5fU4i-0=); */
-    }
-.links{
-  height: 100%;
-  width: 30%;
-}
-    .enjoy {
-      height: 15%;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-
-    }
-
-    .enj-prog {
-      height: 100%;
-      width: 30%;
-      font-size: 30px;
-
-      font-size: 20px;
-      margin-left: 20px;
-
-    }
-
-    .git-skype {
-      height: 100%;
-      width: 70%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: space-around;
-      font-size: 22px;
-
-    }
-
-    .bottom-area {
-      height: 85%;
-      display: flex;
-      flex-direction: row;
-
-    }
-
-    .search-bar {
-      width: 50%;
-
-      display: flex;
-      flex-direction: column;
-
-
-    }
-
-    .profile-img {
-      width: 50%;
-      height: 100%;
-
-      display: flex;
-      flex-direction: column;
-
-
-    }
-
-    .photo {
-
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-    }
-
-    .content {
-      color: azure;
-      height: 50%;
-      text-align: center;
-      padding-top: 0%;
-      padding: 55px;
-    }
-
-    .photo-back {
-      height: 50%;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .welcome {
-      height: 33%;
-      margin-top: 55px;
-      font-weight: 1000;
-      font-size: 5vw;
-      text-align: center;
-      color: #06D001;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-
-    }
-
-    .search {
-      height: 20%;
-      
-
-    }
-
-    .resume {
-      height: 33%;
-      display: flex;
-      justify-content: center;
+      #Home {
+        background-color: pink;
+      }
+      #News {
+        background-color: silver;
+      }
+      #Contact {
+        background-color: blue;
+      }
+      #About {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="tablink" onclick="openPage('Home', this, 'pink')">
+      Home
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('News', this, 'silver')"
+      id="defaultOpen"
+    >
+      Projects
+    </button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue')">
+      Contact
+    </button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">
+      About
+    </button>
+    <!-- home -->
+    <div id="Home" class="tabcontent">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+       <section style="height: 60vh; width: 40vw;"> <div class="col-10 col-sm-8 col-lg-6">
+          <img src="my_image/nisha.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div></section>
+        <div class="col-lg-6">
 
 
-
-    }
-
-    form.example input[type=text] {
-      padding: 10px;
-      font-size: 17px;
-      border: 1px solid grey;
-      float: left;
-      width: 80%;
-      background: #f1f1f1;
-    }
-
-    form.example button {
-      float: left;
-      width: 20%;
-      padding: 10px;
-      background: #2196F3;
-      color: white;
-      font-size: 17px;
-      border: 1px solid grey;
-      border-left: none;
-      cursor: pointer;
-    }
-
-    form.example button:hover {
-      background: #0b7dda;
-    }
-
-    /* Clear floats */
-    form.example::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    button {
-      background-color: blue;
-      border-radius: 25px;
-      color: white;
-      height: 7vh;
-      width: 10vw;
-    }
-
-    @media only screen and (max-width: 600px) {
-  body {
-    .welcome{
-  
-    font-size:26px;
-    color: orangered
-    }
-  }
-}
-
-@media only screen and (max-width: 853px) {
-  body {
-    .welcome{
-  
-    font-size:26px;
-    color: orangered
-    }
-  }
-}
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> index-page</title>
-</head>
-
-<body>
-  <!-- main-box -->
-
-  <div class="main-box">
-    <!-- sub=box -->
-    <div class="sub-box">
-      <!-- navbar -->
-      <div class="enjoy">
-        <!-- text-ennjoyprogramming -->
-        <div class="enj-prog col-md-4">
-          <i class="bi bi-house-door-fill" style="height: 100vh; width: 100vw;"></i>
-          enjoy <br> programming
-        </div>
-
-        <!-- links-box -->
-        <div class="git-skype  col-md-4">
-          <i class="bi bi-envelope"> : nishawajge1995@gamil.com</i>
-          <!-- links -->
-          <div class= " links  col-md-4">
-            <!-- github icon -->
-          <a href="https://github.com/NishaRfullstackdeveloper/NishaHtmlproject"> <i class="bi bi-github"></i></a>
-          <!-- linkedin icon -->
-          <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"> <i class="bi bi-linkedin"></i></a>
-          <!-- skype icon -->
-          <a href="https://www.skype.com/en" ><i class="bi bi-skype"></i></a>
-        </div>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nisha Rahul Chapke</h1>
+          <p style="color: blueviolet;" class="lead">Full Stack Developer</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="myressumee.html"> <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Resume</button></a> 
+          <a href="profile.html">  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button></a>
+          </div>
         </div>
       </div>
-      <!-- botton-area -->
-      <div class="bottom-area">
-        <!-- search-bar -->
-        <div class="search-bar">
-          <div class="welcome"> welcome.</div>
-          <div class="search">
+      <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">Full Stack Developer</span>
+            </div>
 
-            <!-- <form class="example" action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form> -->
-            <form class="d-flex" role="search">
-              <input style="width: 20vw; margin-left: 3vw;" class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <!-- github -->
+
+                <li class="ms-3"><a class="text-body-secondary"
+                        href="https://www.instagram.com/shrutideshmukh_makeover27?igsh=Yml3Z2c5aDV6ZjQ2"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a></li>
+                        
+                <!-- skype -->
+                <li class=" ms-3"><a class="text-body-secondary"
+                        href="https://www.facebook.com/share/r/csnLFZqwMAyCGxUZ/?mibextid=WC7FNe"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
+                          <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063"/>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    </div>
+    <!-- projects -->
+    <div id="News" class="tabcontent">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">My Projects</h2>
+<!-- html -->
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <a href="htmlproject.html">   <div class="box-size col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQhF4-vQjbI6gPs_OsDZ1Mdo-y78Z2X-Zlw&s');
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+              </div>
+            </div>
+          </div></a> 
+<!-- css -->
+          <div class="box-size col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8xiF0OfYNXzTRJMVA1ttBwinESoknoZkMw&s'); background-repeat: no-repeat; background-size: cover;
+              "
+            >
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              >
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+              
+                </h3>
+              </div>
+            </div>
           </div>
-          <div class="resume"
-          >
+<!-- javascript -->
+       <a href="jsproject.html">   <div class="box-size col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+              style="background-image: url('https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_1920,q_auto'); background-repeat: no-repeat; background-size: cover;"
+            >
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+              
+                </h3>
+              </div>
+            </div>
+          </div></a>
+        </div>
+        
+       
+      
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <!-- bootstrap -->
+            <a href="boot_st.html"><div class="box-size col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEhUPDxIVFRUVFRUVFRUVFxUVFRYVFhUWFxUVFRUYHSggGBolHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGzAlICYtNS0tKysrLi0tLystLy0tLi0tLS8tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALUBFgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQYHAgMFBAj/xABUEAABAwIDAgcHDwgIBgMAAAABAAIDBBEFEiEGMQcTFCJBUWEyU3GBkZPSFRYXQlJUcnN0kqGxsrPRIyQ1Q2OiwfAIJTNEYpTT4SY0VYKjwjaDpP/EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EADARAAIBAgUDAgMIAwAAAAAAAAABAgMREhMhMZEEUWEUQSIy8FJicZKxwdHhM0Kh/9oADAMBAAIRAxEAPwCI3QhC9Y2GkmkgBCE0AIQkgGhCSAaSYQgBCEIBITQgAIQhAJCE0AkJoQCQhCAEIQgBNJCAEIQgGhCEAISTQAhCEAkJpIAQhCAEIQgGkhCAaSE0AIUm2fwOkko5q2rfO1sUrY7Q8WSQ4MsbPHW7rXpodnqCtD48PnnE7WOe2OoawNeG2uA5m46jy7t6o6iQuRBCQKD1FXA0kxronG3MQB0kDxk2QGKF0tosK5HUPpi8PMeS7rWBLmNcdL7tbLnEIndXAk1048IJo31xeLNmbCGW1JLcxcT0bxouWETuBoQNdyEAkICaASE0kAJpIQAhCEA0kIQAmkmgEmkmgEhCEAJoSQAhNCASEJoASTQgJzsuacYRVmqEpi5RHmEOUSfqsts+m+1+y69WyUuHue+LDjPDVyRvZFJVBr2jTM4NEbrB1m7yNLdO48PZ/GaNlHNRVgntLK2TNCI7gNDLC7z1s6l6MNxnC6J/KKSGqlmaHCPlDohG0uBbm/J6nQny9G9YSi9dypngI9T6KetDGmpFRyVhcA4RZQC9wB0zd0L9g7QdtJiT8UpKttZlfJTRcfDNla14tfMwloAINh5T1C3KwPaCMRz0tex8kNQ/jXOjIEjJrg8Y2+hvYadnTchbqnGaOnppaXDmzONRYTTT5Q7ixfmMa3TpOvad+lpcXfbW+5J0cSxSTC6ekgossb5oGVE0uRrnvc/c0FwPNFj4rdt8sQr3OhosYja2OpMz4JS1oyv0c3OWkWvlv87sC50WM0VVBDBiLZmvp25I5oMpLo9LMe13VYa9nRcheXaDH4pGwU1JG5lPTkuYHkF8jybue+2gO/d7o+AQo+NfcixKsexmP1ZbHXFpp4HczM1uVjnwsIc+wu4ZrHW9lvxSPFHQzcZyfEad7HZTEWNdEfayMAbe49yCTpvXBxXaOgfWMxCOJ8hfpUQzNjLMvFhn5M684Wvfs6Lp4bjOF0D3VNEKp0pa4MjlLGxNLh7ct1eB23/iq4XZWXt9fgLHpoNoKmPBi5jwCyobA3mMNouKHN1Gp137+1OpxyWiw7DzTZWyPbKC8ta52Rkncc4HQki/wQuNgmK0nIpaGs45uaYTsfEGnnBoblIdu3fSvJi2LsmpKOnaHB9O2UPJtlJe5pGUg3O7psrYNdvf9hYk2zz8SNKw0EUdMC5zpaqV0d53F28Z23a0ajceix0N922sJdHh9RMYXzulySSw2LJMrx0gC9reI5lxnYvh1VTU8VcKlj6ZnFt4jiyx7dLHn9y7mj/fozxLaGmqYqOmghfFxFQ3K0kOaYybAl975zoTpvvqowvFe31+IOptnthPR10sVKGMYwsMrcjTxzjG1x4wkXtlIbpbco9wg0EUFYeJblZLHHMGDQNL73AHQLtJ8akW2dThTq6U1cdRxkRYHNiLOLnHFtc3NfVpsQ02I0Chm0eMOrah9Q8Bt7BrRuaxos1t+n8SVNJbNL2COYgoQtywIQmgBCSaASE0kAJoQgEhNCASEXQgBBTQgEmkhANCEkA0kFCAEIui6AEJZkZkA0JZgjMgGhLME7oATshCAE2OLSHDQggg9RGoKSLIDdW1Ukz3SzOL3usXOO82AAvbsAHiWiydv5uiyALIsiyFICyLIsiyANUWRZFlAEnZFkWUgLIshFlACyEWQgEhCEA0JJoAQkSlmCAySSzhGYIDzYnKWRPc02IabHqPYocK+fvsnz3fipXjDvyT/glengbipnVkgqmNe3iHWDhmAdxsXR4Ljxri6i7kkjObtuQ31QqO+y/Pd+KPVCo77L8934r6NkwrAu6NNS9O+NpuTuN7LD1MwDpp6TcP1bRqN53dKyy59mY51P7S5Kb2Dxp4mdDK4uErebnJdZ7bkDXdcX+hWLxg6gpAyjwKMh0dPTgj2zWsaRbXpt/IXcgbhbxn4uI36wPrCh059mTmwfuuSB8YOoI4wdQVgGnwvvUXkWXJsLtfiYvJ09W5Rhl2Jxx7ldFhkIiji4xztA0AdR6dwFgdT1LnjYTE+8DzkXpKa7OyMdidSGCzQxpA6r2/3XP4QOEh+F1LaZtM2UOibJmdIWd057bWDT7n6VaFSUNi6diO+sbEu8DzkXpI9Y2Jd4HnIvSXX2W4S63EnvjpqGHMxocc872ixNtLRlSUYpjHvOj8dU//AElf1EycTIH6xsS7wPORekj1jYl3geci9JT71Rxn3nSf5p/+kny/GveVJ/mpP9JPUTGJkA9Y2J94HnIvSR6xsT7wPORekrA5bjXvKl/zMn+ksX1WLvBZJRwAOG9lRPf5zYwW+G6nPmMbID6xsT7wPORekj1jYn3geci9JWQKnFj/AHWm89IPo4tMT4t71pvPv9BTnz8EZn1Yrb1jYl3geci9JHrGxLvA85F6SsoT4r72p/PP9BZCbFPe1P51/oqM+fgZn1YrP1jYn3geci9JHrGxPvA85F6Sswz4n73p/PP9FR+p23qI5HROp48zHFrrPda432NtVKq1HsQ6ttyJP2IxIAniL26BJET4hm1UeJIJBFiCQQdCCN4IO4q7dl8bfVtkc9jWFjmgZSTe4J6fAqc2rktX1Q/bv+u60p1ZOWGReE8R5kLFpWV10lwTSQgEhCEAJOKawlKMEUr8YqOMeBK4AOcAG6AAEgCwXn9WKnvz/KpjwdYBRVlVU8u1ZGCWtu5oJc884uYQbC1rf4uxWA3YrZwXzMb4OOnB6OuTw+ReYozequc0qkYvVrkq3ZzFZHtc173Eg3BPUfwt9K6xqn+6KmVRsPgpeHUtSKbQAjnS333HOk6eafF2rYOD+jJt6p/+EH6nqcE+zIVaD/2XJBXVbvdFSPg3poX18kkjB/yEj3WuLubUtZmswi5y6dq9G0Wx0FNTSTMrjIWMzhnFZc1yLWObcevsWjgo59XIOvDpR/8Araq6p6l1aa7ljthw91hxRsOi0ung5+i3Nw7DTpxJt1Xkt9pbKagC6MNAFuqn3nyPSw+yuEc71Kw8/qT5ZPSW+mw6haMrYSBvtz/SXvqImRMdK8hrWNLnEkAAAX1J0CrLZ3hIY3jnV4td2eFsTedYk3iIvY2AHOJG8qrqezb5Hpqa9lwWG6lo2i5jIA1Or7eHukOpqS1sh6977X3A90q42k2xNXGYo4wyJ5ANyS/muvvBtY2G8KYbFV7Kmma3QPiaGOb0gN5rHH4Qb5brPNXd8kqhHsuDk7OsazGK6NosGsjAGunNaelV1w8/pFnyWP7yZWBs7JfHsSHU2L7DFAOHb9JM+Sx/eTKq3Iexo4HMJnqqidkEojLYQSTfUZxpp2q2BstUxX42rZdw5pL5G2I3ndqoH/R2H53VfJ2/eBXHtFNK1rOKdluSDoDcW7QVvGrJfCrcGEunhN4nfl/oRyTZ+oLgG1bAerjJLk9FulZ+tXELW5Zr18ZN19S6ENVVHfIfI38F7YnVB3vPkb+C0xz8cf0R6KHnlnFOzGIe+/8AyzrSNlcT9/n58q7mKYkaaMzVEwjYCAXOytF3EAakdq9DpJQM3GaAXvzbW33vbciqT7x4/oPoYefzP+TkDZ2v9+fvyJ+t2v8Afn78i8eH7YGavfQRuDg2IPEwcwtc8WLmAAa6Ob072u0Uuw9zzmzuvutu7b9Co60re3BL6OC78sj7Nn6731ft4yVZDZ+t1/OelpB4ybQC9x2308FlIICdLG/ZzBfw2avW4X6beT+Ko60vHBC6aHnlkNdszXHuqoE+GT+N1XtdRmOomDzmc2V4J11NzqrzVJ7SSWq6n46T7RV6dRy0ZE6UY6q+vklXB6eZN8Jn1OVU7WH+sav49/1q0uDV92T/AA2fZKqza39I1fx70h/kZ00dkaozosrrGPcsl2o3C6aSEAIQgoAWuZcWvx4seWNZfLoST09KkOzdMytiDy8sdcgtDbjQ9Bv1W8qxlXhsVxI6fA4yPjsQc+JsluLADg091I8HugezyK1YKemP9xh8bI/4MUE2LoIsNmlcXlwqS0G4AyOaXPFuw6jyKdzbVUNOM0ryLX3Me7d8EaLhVdQ0f7lV08ZrE0jdNSUjGmSSjp2taLuc5sYAHWSW6LLEHUkETppaWINY1zjzWkmwvYDLqexVttztwa1j6aEwtpy4EFzmiV+UgjM3McoDhfdrp2hRWsxF7srZ6kyWaLZnuc1oaAW5ARoLKH1Pb9WRkU+3/C1NuG078LqZY6eNv5vxjHhrQecWWtzbg2KgPBFUBlRLI7QDD5voq2m3ht0KIYnSYlUuJgiq5YGEsiMccrmBregZbgG9ye0lb8CwbEWFzZKOrsdQTBN3Q/7er6kk8REUovQviPaKNoDiHEf4WvefI0HrXPxHhOhguBTyuN7c8thb4bu1t4r9irB1FXRtMnEVDA0EkmOQAAC5LgRu8Oi7cG0V3Fj448ucEjLvynQnyLmdOUfc68xVfBz9oceFbK6WSrYxjn52wCZ0jWOFgLN01sN9hvXJphBz3mQPIDtA24tqL9p1BHVZSKtlglfLI9jQDTysaMo0c9wcHjTeNfKuXsvSU7yQ8E814NiWnUaWss8Ts73M3ozxQYhCMwLrgOLgBZoIJuAABpp0WFty7GEbYy00ualZEwSNa17X3cGjMS2xLwS4FxuoXK3KcrhqCWnwg2P1LX7duvth9YW2BMriaLn2b/8AkGKfBh+w1QnhwBOItt71iv52ZTXZ0/8AEGK+CL7DVEOGVmbEW/JovvJl1UleRz1HaLOh/R7Zarqfk7fvArmxcCzL9Z+pVDwDstV1HycfeNVibeVPFthJcW89262vNGmoVeoum7GnS/E1c7FM1qzxSsZTQSVD9RGwvIuATYXsCelVhNiDpGnNUujuDpHMBbq53E3XCm2fEzzMysY8saw5pWcc4OzC4BJGgHTYHTycmfNbnZUpa6GXCDtu3Eg2KKIsijdnBeQXvdYtuQ02aBc6a794XBqMSrnwxiWeTi48rGxAyNAYLNbzQMpFiNSbrDEW1jY4ZDIwtldIGtbGG5eKkygnf3XdW+tacZhqWRRSyE2fnZfm72kHcNQfD1JmOXYxVjbhIlhlFXFZphfnaXFoFw3RoadXX3adY619DbOY1T1kYfBKx/MY54Yb5S4HQjeNQ7Q9S+U5aiW93G9mloPTYix8fari/o7VZfHVsIAyOhta+4iXr7VpFO+5WUvhsW3HFf21x2Of9eZb2NsLa+Mk/SV5oXOuNf5+YF61szFWMSqE2sltWVI/byfaV9Er562xk/Pqoft5PtLSluZ1dibcFb7xz/GM+yVWu1n6Rq/j3qw+CR94qj4xn2FXe1f6Rqvj3q8P8jNKWyNce5ZLGPcsl3I3BNJCALrF5Wa1yowdfZTg9biNO6oI1M8jblzm6MsLaMPT2qZ7M8Gz6XM0ZcjrHSR17gnU3Z1E+QLwcHNfTw0Y44OJ46cgC17Z+0gLDaLbidkt6aLio2Mdo9he51yw5zYZWOA0FnOFnG9+jzZV4q8Xbg530zvixPnQ28IND6nxxSXAvKdc1/a9Og61EvXS4WDHtA3EWYNCLdXUT5VLsE2i5VLQNuS6OomBe64z5qWRzb2101HkVpce/qb4LyfXl1WMoqWptCbgrI+eMbxiOVri4MLnOiN9BYM4zQW3f2jly9p5IfyTmZQDEAQLalpOvabH6Avpszu6LWv1yXt83wLGWZ2U7r2PfLfZ06f91RUknoVc7srTg8pKmShaYp2xjjp7Nc1pItI4Hew9NzvUoiw3EtDy6Ow6MjRpfd3Gi4OyFXTxwHjwb8oqzYNLjblU24AX6CvFtXtu5ro46KMxBr2kvmjeC/RwycXl7k2JvmBOXosV0rqIxVtPyoyl0ifxNvX7z/k7+1FBVto6hxqYyBTzF4AF3ARybubpzbDxdqitDwa1MzW1DKiJokGcAtlJAdqASB2ri0O2TpOVxVDzI6opp2Ns0NEbmwyFpA0s22bQAnVvare2ZF6SAnP/AGLD3b7axgaWbp2dSzlJT+rF4xwbMgj+CysNxymLd7iX8FlhnBbVwm4qYjfTuZR/BWZxfxmpv3clx4Ob4lk9hNtJBbpDpAei/tdd31qrimTiZUVVwO1b3OdymGzjfuJb/UtcfAlW3DuVwaEHuZOg36QrngkcwWyuPa4vJ8pbdbWzuJtkt287+LVNkLsqrZ4/8QYp8GL7DVGuFlt8Qb8ni+8mUi2fP9f4p8GL7DFwuE8Xrx8ni+3KtqPzGNb5DqcCTQKuew/u4v2/lRr/AD1LvcNM+SGmNibyv3XPtOxcbgY/5uf5OPvGq3ZnODSWgk6aAgHfra/YorL4mTQdopnzK+uc4WyHXsK3UtY9oIs7yH8F9EmplsCIpbW6481wSLEHy3WQnk0tHL16mMdNrfxWGA6c5nzXidXI9rGgO5t7aHpXrxiYyUjWlpJa4OGh37j5Rfyr6HFRLb+zl323xXG6x/nqK2STStsRHI7rsWX7NCB1/QoyloUxs+RpYn+5dY/4Srg/o6sIFbcEa0+8EdEvWrgpHOcLuD29FnZb+Hmra9XSsQ3c0U7nGwFrddgfpDyvUvJAH7x5HFw+gtuvUN2u9WZSJiV83bbSfn9X2TyfaX0gV8xbeyWxGs+USfWrQdmJq6LA4HX3hqPjWfYUD2q/SFV8c9TPgUkvBU/HM+7Che1P6QqvjnrSl85eBhHuWawjWa70aiTSTQCWEm5Z3WEu5GCecHezNJW0QfU8ZcT1DGhjy0EZw7cBqbuUpdwc4eb3bUG7Szu39ybXHc6dC5PBHWMZh5aZMp5TUXF7by21/pU0GJM79+8vKlG7ehk5eSE4lsvS4ZVYcKZspD5p3OaXF7iW0kgAb09KsgUzPcu+d/uqp4bcd4mOhngeHvjllO8+2jy3NjfpUGoeF6tZfNHE7TTMZd/icoIPpFlKzqI7CfwKxlpo7HmndvzHT6V8/N4a6ux/N4QRu1lN/wB7RA4bKzKbwQX6B+V18ebRAS3BtkOXQmXlJhAqKyPLka69quU3uXj3Vl0Bwb2LD6oHmOa4fk2a5Qbfre0+Vezgurs+Hte5wa589U8gOtYvmc7cTfpUtbUA/rP3wP4qHFPcnE7WuVbifBZHTR1FaKzOYYKmTi+LaM14JNLiQ2HO6lZOyNQ3kdPzhpDFpp7hvatG1c7fU+tBeCeSVFufe/5J+lrqrsC4RqeCNsMpbzAG3bfNzdLEEW8d1K0ILy5Szr+pPlLf5sqvp+E/CHDnTOYe1pP1XXp9kPCDurgPCx/ooCxXzA7jbyFLjde66d1hu6lX44QcJ/6gz5j/AEVmOETCf+oM+Y/0EBw8C/T+J/Bi+wxcLhQfauHyeP7cq6eyOIw1ON4jUU7w+N7Yi14uAQGtBtcX3grdtxsfVVtSJ4DEG8UxnPc4OzNc8nQNOnOC1pSSldmdWLcdDXwJOvV1HycfeNVv1hAY4kho0uTuGvgKp7ZLZ7FsMlfNCKN5kZkIkklsAHB1xlZ2KT1GJY3I0skpcMe02u1z53NNjcXBZbeoqtOV0KSajZkv5N+0b5W+L2qybTXNg9t/C09X+FRIY3j3eMO85Uein6t493jDvOVHoqli+pMWYeel2vZlt1e5SfQgDV5Hzen/ALe1Q/1cx/vGHecqPRR6t4/3jDvOVHoqCSWmnZvMgsb+4todehe1sgcAQQfBqFBPVvH+8Yd5yo9FBxrHu8Yd5yo9FATsC3V9KzNjooB6s493jDvOVHop+rWPd4w7ztR6KAnpXyrwgyf1nW/KJPrV2erWPd4w7zlR6KrbHODjFKuomqnupWumkdIWtklsC7oF41KIZ2+A516ep+Pb92FEdqP0hVfHPVi8GuzFRhsUsdQ6MmSQPHFuc4WDQ3W7Rqq52n/SFV8c5a0fmLxMY9yyWMe5ZL0EaAmkhACxl3LJJwQEVrKmqie5sckrWlxcAxzw3XpsDa6HYlUhgcKqoz31bnl0HXe9lIJ4LryOo1ySou+jM3A4T5aicESyPcGi44x7iAbjucx3rz8hf2eVSUUayFGq5DYwkZ5C/s8qOQv7PKpRyNLkaenJwnFqaIvdxjS3UC7XdBAAPQQV5uQSbuZ85n171IXUawNEoyGRhOK3C3m2ZzAB03B+yNfGVpnpXuc5wGhcSNesqQCiWxtGioDCR6lpi1wL2Zm9IuAhlHd93tcGX1DSC4DqGbQlSPkaORqfTk4TxU+F0Du6kqG+FsPpLa7CcNG+ap8UbD9RW80awNEoyBhOzsfjFBhr3yRSVDi9oac0YFgLno8KlPsnU37b5irzkaORJkMjCWJ7J1N+2+Yj2Tqb9t8xV3yJHIkyGMJYfsn037b5iPZPpv23zFXnIkciTIYwlix8JtLfnGcDotGCfpIWD+EDDXEuLZiTvJgZc9GvPVe8iRyJMhjCWLFwjYezuePHggYP/deWu4S2EjiXyAdOePXyC6gnIkxRpkMYSY+yQ/vjvNn8EeyQ/vjvNn8FD+Ro5ImQycJMPZHf3x3mz+CPZHf3x3mz+Ch/JEckTIYwkw9kd/fHebP4KM1tdFNM+dz35nuzG0Lt58a8vJFtZT2Vo0WndMKJ6Y6iP9qf/rA+04LISX3Aj4Vv4ErU1i2NauhJ9y1jaChDQhaEjQmkgCyWUJpoDHIE8qaEArJZVkhAY5QjIE00BjkCMoWSEArBFgmhAY2CMoWSEBjlCMoWSEBjkCMgWSEBjlCMoWSEBjlCMoWSEBjlCMoTQgFlCMoTQgFlCMoTQgFlCMoTQgFlCdkIQAmi6EAkIQgAJpoQCSQhAMITQgMUJoQCui6EIAui6EIAui6EIAui6EIAui6EIAui6EIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCA//2Q=='); background-repeat: no-repeat; background-size: cover;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
 
-            <button  style=" background-color: #45474B;" class="my-resume"> <a href="ressume.html"> download cv</a></button>
-            <button style="margin-left: 2vw; background-color: #45474B;" class="contact"> <a href="profile.html"> contact us</a> </button>
+                </div>
+              </div>
+            </div></a>
+      
+            <!-- <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                  
+                </div>
+              </div>
+            </div>  -->
+<!--       
+           <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+               
+                </div>
+              </div>
+            </div> -->
             
-            <div style="margin-left: 5%;" class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                See Projects
-              </a>
-            <!-- my projects -->
-              <ul style="background-color: #06D001;" class="dropdown-menu">
-                <li><a class="dropdown-item" href="htmlproject.html">HTML</a></li>
-                <li><a class="dropdown-item" href="cssproject.html">CSS</a></li>
-                <li><a class="dropdown-item" href="jsproject.html">JAVSCRIPT</a></li>
-                <li><a class="dropdown-item" href="boot_st.html">BOOTSTRAP</a></li>
-              </ul>
-            </div>
-          
           </div>
-
-          
-        </div>
-        <!-- profile -->
-        <div class="profile-img">
-          <!-- photo -->
-          <div class="photo-back">
-            <div class="photo">
-              <img src="./my_image/nisha.jpg" height="120vh" width="120vw" style="border-radius: 50%;"/>
+        <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">Full Stack Developer</span>
             </div>
 
-          </div>
-          <div class="content">
-            <h2><I>NISHA CHAPKE</I></h2>
-            <h3>I am a full stack developer</h3>
-            </p>
-          </div>
-          <!-- content -->
-          <div class="content"></div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <!-- github -->
+
+                <li class="ms-3"><a class="text-body-secondary"
+                        href="https://www.instagram.com/shrutideshmukh_makeover27?igsh=Yml3Z2c5aDV6ZjQ2"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a></li>
+                        
+                <!-- skype -->
+                <li class=" ms-3"><a class="text-body-secondary"
+                        href="https://www.facebook.com/share/r/csnLFZqwMAyCGxUZ/?mibextid=WC7FNe"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
+                          <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063"/>
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
+
+      </div>
+      <!-- contact -->
+      <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+   
+        <!-- contact -->
+        <div id="Contact" class="tabcontent">
+          <h3>Contact</h3>
+          <p>Get in touch, or swing by for a cup of coffee.</p>
         </div>
+<!-- about -->
+      <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
       </div>
     </div>
-  </div>
+    <!-- SCRIPT -->
+    <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
 
-
-
-  <!-- htmlpage -->
-  
-</body>
-
-
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
 </html>
