@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- whatsapp -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +20,19 @@
   <title>Document</title>
 
   <style>
+.map{
+
+}
+
+.map:hover{
+ box-shadow: 2px 2px 2px azure;
+}
+
     .font {
       font-family: "Pacifico", cursive;
       font-weight: 400;
       font-style: normal;
-      font-size: 3vw;
-      text-shadow: 3px 3px #FF0080;
-
+      font-size: 2.5vw;
 
     }
 
@@ -42,18 +46,18 @@
       width: 100%;
       height: 50vh;
       background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcIDQcIBwcHBwcHBwoHCAYHBxsICQcKIBEXFxURGR8kKC4uJCYxHR8fITsmOS4rLj4uFx8zOjMsNygvLisBCgoKDg0NDg0NDjclFSU3LTA3LTQ3Nzc3Kys3Ny8rLSsyLys4LjAtKy0rKysrKysrKys3KysrNy0rKys3KysrK//AABEIAKMBNgMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQUCBAb/xAAdEAEBAQEBAQADAQAAAAAAAAAAAQIDBBIFESEG/8QAGAEBAQEBAQAAAAAAAAAAAAAAAgYBAwD/xAAdEQEBAQACAgMAAAAAAAAAAAAAAQIDITJBBAUx/9oADAMBAAIRAxEAPwDc69N9db6dN6303q61vV/d1XCo7RUiAUZUAKDUAKAiKhxlARsCiAcERUKMogFAohUKDQEKDQEKDQEKDRFQhoCFBogFBqAFBoghQRFQoNejye31+PWt+T0dfPvefjWuW/n6yPOMvHm93ItWgicilEVCjKIqFAoiocZUAIKII0aAHGVAQoFASlBogFBpUAoNEAoIhQoNQAoNEEKCIqFBoCFBogENQAoNACY1UBMxSoAUCoCFBKioY0BCg0QCgiAQ0QCg0SlQoNCiENAQoNASlBoioQ0RUKDUAKDUAKDUBCgiKhQaUAoNRUCY1UVE0pKItQoNEoFBqAENEEIaAhQaAhQaAlKCIBQaIBQaIBQUChQagBQaiKhQaIqFBoioUGiAQ1CgUGiVUKDUAJjVATUUlQEKCVAKDQEKDRAKCIUKDRAKDRCoUGgIQ0BCg0RUKDRFQhoioUFACg1ACg1AQoIioUGgIUGiAUEECY1kWomopKJRCg0AKDRBKQ0BCg0BCg0BKUFACg0QCg0QCgoAUGpQCg1KioUERahQaIqFBogENQAoNEohQQEKDQAhaoImopRAIaAhQaIUKCIBQaIBQaOVqFBoCFBoCFBoioUGiVUIaJVQoKAUoNQAoNQEKCIqFBoCFBogHBEBsGggQtZBE1FLQAoNEEIQEpQaAhQaFEpQagBQaIBQagBQUAKDUoBQaiKhQaIqFBoioUFACGoAUGiCHBAQoNARo0AIWqgJpS0BKUGiAUEQCg0qAUGlcrUKCIqENEVCgiKhQaIqENEVCgoCFBoAUGoioUERUKDQEKDRChwRAKDRAKDUAaLVATUUtQKhQQEKDRKqFBolVKUGoAUGoAUGoAUFAQoNACg1EVCg0QCGiKhQUBDg0AKDRBKUEBCg0BCGiKhQUAaL6L8zx58PT7OXHPxy5995xiX9zM/bxgmM/kUePHKIDpHhAIalAIaVyBQaIBDRAKDRFCg1EoEIgFBQAoNQAoNRAKCVAKDQAhRAKCIBQaIBQaiAQ19N/hfx3i9/b149vDPoxz831jOtWTN+p/f4Anvsebkz8jUzuydezzOn/9k=);
-      background-repeat: no-repeat;
-      background-size: cover;
+background-repeat: no-repeat;
+background-size: cover;
     }
 
     .carousel-one {
-      background-image: url('https://www.visualite.in/style/images/art/slider-bg5.jpg');
+      background-image: url('https://i.pinimg.com/originals/e4/a2/b0/e4a2b0842c2be1c15bc9fa5ab1ddd168.jpg');
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     .carousel-two {
-      background-image: url('https://makeupartistskolkata.wordpress.com/wp-content/uploads/2020/03/makeup-course-in-kolkata-beautician-course-fees-debis-premier-makeup.jpg?w=1568');
+      background-image: url('https://e1.pxfuel.com/desktop-wallpaper/179/273/desktop-wallpaper-makeup-beauty-beauty-parlour-make-beauty-parlor-thumbnail.jpg');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -85,15 +89,10 @@
     }
 
     body {
-      /* background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcIDQcIBwcHBwcHBwoHCAYHBxsICQcKIBEXFxURGR8kKC4uJCYxHR8fITsmOS4rLj4uFx8zOjMsNygvLisBCgoKDg0NDg0NDjclFSU3LTA3LTQ3Nzc3Kys3Ny8rLSsyLys4LjAtKy0rKysrKysrKys3KysrNy0rKys3KysrK//AABEIAKMBNgMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQUCBAb/xAAdEAEBAQEBAQADAQAAAAAAAAAAAQIDBBIFESEG/8QAGAEBAQEBAQAAAAAAAAAAAAAAAgYBAwD/xAAdEQEBAQACAgMAAAAAAAAAAAAAAQIDITJBBAUx/9oADAMBAAIRAxEAPwDc69N9db6dN6303q61vV/d1XCo7RUiAUZUAKDUAKAiKhxlARsCiAcERUKMogFAohUKDQEKDQEKDQEKDRFQhoCFBogFBqAFBoghQRFQoNejye31+PWt+T0dfPvefjWuW/n6yPOMvHm93ItWgicilEVCjKIqFAoiocZUAIKII0aAHGVAQoFASlBogFBpUAoNEAoIhQoNQAoNEEKCIqFBoCFBogENQAoNACY1UBMxSoAUCoCFBKioY0BCg0QCgiAQ0QCg0SlQoNCiENAQoNASlBoioQ0RUKDUAKDUAKDUBCgiKhQaUAoNRUCY1UVE0pKItQoNEoFBqAENEEIaAhQaAhQaAlKCIBQaIBQaIBQUChQagBQaiKhQaIqFBoioUGiAQ1CgUGiVUKDUAJjVATUUlQEKCVAKDQEKDRAKCIUKDRAKDRCoUGgIQ0BCg0RUKDRFQhoioUFACg1ACg1AQoIioUGgIUGiAUEECY1kWomopKJRCg0AKDRBKQ0BCg0BCg0BKUFACg0QCg0QCgoAUGpQCg1KioUERahQaIqFBogENQAoNEohQQEKDQAhaoImopRAIaAhQaIUKCIBQaIBQaOVqFBoCFBoCFBoioUGiVUIaJVQoKAUoNQAoNQEKCIqFBoCFBogHBEBsGggQtZBE1FLQAoNEEIQEpQaAhQaFEpQagBQaIBQagBQUAKDUoBQaiKhQaIqFBoioUFACGoAUGiCHBAQoNARo0AIWqgJpS0BKUGiAUEQCg0qAUGlcrUKCIqENEVCgiKhQaIqENEVCgoCFBoAUGoioUERUKDQEKDRChwRAKDRAKDUAaLVATUUtQKhQQEKDRKqFBolVKUGoAUGoAUGoAUFAQoNACg1EVCg0QCGiKhQUBDg0AKDRBKUEBCg0BCGiKhQUAaL6L8zx58PT7OXHPxy5995xiX9zM/bxgmM/kUePHKIDpHhAIalAIaVyBQaIBDRAKDRFCg1EoEIgFBQAoNQAoNRAKCVAKDQAhRAKCIBQaIBQaiAQ19N/hfx3i9/b149vDPoxz831jOtWTN+p/f4Anvsebkz8jUzuydezzOn/9k=); */
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* background-color: #FFC7ED; */
-
-
-      background-image: url('https://slidescorner.com/wp-content/uploads/2024/05/Aesthetic-Light-Purple-Background-with-Big-Flower-for-PPT-PowerPoint-Google-Slides-and-Wallpaper-By-SlidesCorner.com_.jpg');
-
-
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcIDQcIBwcHBwcHBwoHCAYHBxsICQcKIBEXFxURGR8kKC4uJCYxHR8fITsmOS4rLj4uFx8zOjMsNygvLisBCgoKDg0NDg0NDjclFSU3LTA3LTQ3Nzc3Kys3Ny8rLSsyLys4LjAtKy0rKysrKysrKys3KysrNy0rKys3KysrK//AABEIAKMBNgMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQUCBAb/xAAdEAEBAQEBAQADAQAAAAAAAAAAAQIDBBIFESEG/8QAGAEBAQEBAQAAAAAAAAAAAAAAAgYBAwD/xAAdEQEBAQACAgMAAAAAAAAAAAAAAQIDITJBBAUx/9oADAMBAAIRAxEAPwDc69N9db6dN6303q61vV/d1XCo7RUiAUZUAKDUAKAiKhxlARsCiAcERUKMogFAohUKDQEKDQEKDQEKDRFQhoCFBogFBqAFBoghQRFQoNejye31+PWt+T0dfPvefjWuW/n6yPOMvHm93ItWgicilEVCjKIqFAoiocZUAIKII0aAHGVAQoFASlBogFBpUAoNEAoIhQoNQAoNEEKCIqFBoCFBogENQAoNACY1UBMxSoAUCoCFBKioY0BCg0QCgiAQ0QCg0SlQoNCiENAQoNASlBoioQ0RUKDUAKDUAKDUBCgiKhQaUAoNRUCY1UVE0pKItQoNEoFBqAENEEIaAhQaAhQaAlKCIBQaIBQaIBQUChQagBQaiKhQaIqFBoioUGiAQ1CgUGiVUKDUAJjVATUUlQEKCVAKDQEKDRAKCIUKDRAKDRCoUGgIQ0BCg0RUKDRFQhoioUFACg1ACg1AQoIioUGgIUGiAUEECY1kWomopKJRCg0AKDRBKQ0BCg0BCg0BKUFACg0QCg0QCgoAUGpQCg1KioUERahQaIqFBogENQAoNEohQQEKDQAhaoImopRAIaAhQaIUKCIBQaIBQaOVqFBoCFBoCFBoioUGiVUIaJVQoKAUoNQAoNQEKCIqFBoCFBogHBEBsGggQtZBE1FLQAoNEEIQEpQaAhQaFEpQagBQaIBQagBQUAKDUoBQaiKhQaIqFBoioUFACGoAUGiCHBAQoNARo0AIWqgJpS0BKUGiAUEQCg0qAUGlcrUKCIqENEVCgiKhQaIqENEVCgoCFBoAUGoioUERUKDQEKDRChwRAKDRAKDUAaLVATUUtQKhQQEKDRKqFBolVKUGoAUGoAUGoAUFAQoNACg1EVCg0QCGiKhQUBDg0AKDRBKUEBCg0BCGiKhQUAaL6L8zx58PT7OXHPxy5995xiX9zM/bxgmM/kUePHKIDpHhAIalAIaVyBQaIBDRAKDRFCg1EoEIgFBQAoNQAoNRAKCVAKDQAhRAKCIBQaIBQaiAQ19N/hfx3i9/b149vDPoxz831jOtWTN+p/f4Anvsebkz8jUzuydezzOn/9k=);
+background-repeat: no-repeat;
+background-size: cover;
+ 
     }
 
     .insta-btn {
@@ -111,10 +110,6 @@
       width: 3vw;
       color: #06D001;
     }
-
-    .bx {
-      font-size: 60px;
-    }
   </style>
 </head>
 
@@ -122,7 +117,11 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark " aria-label="Offcanvas navbar large">
     <div class="container-fluid">
-      <a class="font navbar-brand" href="#">Deshmukh Makeup Artist</a>
+      <a class="font navbar-brand" href="#">Deshmukh Makeup Artist
+       
+      </a>
+      
+     
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
         aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -137,11 +136,9 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class=" nav-link active" aria-current="page" href="../newproject/contact.html"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                  class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-                </svg> Katol</a>
+              <a class=" nav-link active" aria-current="page" href="../newproject/contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg> Katol</a>
             </li>
 
             <li class="nav-item">
@@ -154,7 +151,9 @@
             <li class="nav-item">
               <a class="anchor-tag nav-link active" aria-current="page" href="../newproject/academy.html">Academy</a>
             </li>
-
+            <li class="nav-item">
+              <a class="anchor-tag nav-link active" aria-current="page" href="../newproject/studio.html">Studio</a>
+            </li>
             <li class="nav-item">
               <a class="anchor-tag nav-link active" aria-current="page" href="../newproject/about.html">About</a>
             </li>
@@ -162,22 +161,12 @@
               <a class="anchor-tag nav-link active" aria-current="page" href="../newproject/contact.html">Contact</a>
             </li>
 
-
+           
 
         </div>
       </div>
     </div>
   </nav>
-  <!--  -->
-  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-    <a href="https://www.facebook.com/people/My-Cloth-Care/100057565744629/" style=" text-decoration: none;"><button
-        class="btn btn-bd-primary py-2  d-flex align-items-center" type="button" aria-expanded="false">
-        <i class='bx bxl-whatsapp bx-tada' style='color:#03f080'></i>
-
-      </button></a>
-
-  </div>
-  </div>
   <!-- corousel -->
   <main>
 
@@ -255,51 +244,47 @@
 
       <div style="height: 70vh;" class="   row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="  col">
-          <a style="text-decoration: none;" href="../newproject/hairstyle.html">
-            <div class="img-one card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('https://s.yimg.com/ny/api/res/1.2/Xgd3jAWzAw8cgLUtxN144A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTU1MDtoPTQwMA--/https://media.zenfs.com/en_IN/News/Bollywoodshaadis.com/article-l-201492668533532015000.jpg'); background-repeat: no-repeat; background-repeat: no-repeat;">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="image  pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair Styling</h3>
+         <a style="text-decoration: none;" href="../newproject/hairstyle.html"> <div class="img-one card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('https://s.yimg.com/ny/api/res/1.2/Xgd3jAWzAw8cgLUtxN144A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTU1MDtoPTQwMA--/https://media.zenfs.com/en_IN/News/Bollywoodshaadis.com/article-l-201492668533532015000.jpg'); background-repeat: no-repeat; background-repeat: no-repeat;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="image  pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hair Styling</h3>
 
-              </div>
+            </div>
           </a>
+          </div>
         </div>
-      </div>
-      <!-- IMAGE-TWO -->
-      <div class="img-two col">
-        <a style="text-decoration: none;" href="../newproject/bridal.html">
-          <div class=" img-two card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+        <!-- IMAGE-TWO -->
+        <div class="img-two col">
+        <a style="text-decoration: none;" href="../newproject/bridal.html"> <div class=" img-two card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('https://5.imimg.com/data5/ANDROID/Default/2023/6/316005392/BS/IL/BR/189173626/product-jpeg-500x500.jpg'); background-repeat: no-repeat; background-repeat: no-repeat;">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <h3 class="image pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Bridal Makeup</h3>
 
             </div>
-          </div>
-        </a>
-      </div>
-      <!-- IMAGE-THREE -->
-      <div class="  col">
-        <a style="text-decoration: none;" href="../newproject/party.html">
-          <div class=" img-three card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          </div></a> 
+        </div>
+        <!-- IMAGE-THREE -->
+        <div class="  col">
+        <a style="text-decoration: none;" href="../newproject/party.html"> <div class=" img-three card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('https://rajcreativesalon.com/wp-content/uploads/2023/09/party-makeup-1.jpg'); background-repeat: no-repeat; background-repeat: no-repeat;">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <h3 class="image pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Party Makeup</h3>
 
             </div>
-          </div>
-        </a>
+          </div></a> 
+        </div>
       </div>
-    </div>
     </div>
     </div>
     <!--map  -->
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class=" map row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <a
           href="https://www.google.com/maps/place/Katol,+Maharashtra+441302/@21.2743847,78.566741,14z/data=!4m6!3m5!1s0x3bd459ded1faa031:0x2199f0f7535c15c8!8m2!3d21.273289!4d78.5859566!16s%2Fm%2F02wvc60?entry=ttu">
-          <img src="https://img.staticmb.com/mbphoto/locality/original_images/2021/Dec/24/95483_MAP.png"
-            class="map d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"></a>
+          <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/07/googleMapsTricksHero.jpg"class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"
+            ></a>
       </div>
+      <!-- contact -->
       <div style="text-align: center" class="col-lg-6">
         <h4 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">For all queries, bookings please call/Whatsapp us
           on:9322072140</h4>
