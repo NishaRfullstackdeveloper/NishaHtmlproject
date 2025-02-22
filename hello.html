@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f0f0f0; */
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    /* background-color: #fff; */
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    /* color: #333; */
+    margin-top: 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.project {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+#home {
+    background-image: linear-gradient(to bottom, #333, #555);
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    color: #fff;
+    text-align: center;
+    padding: 5em;
+}
+
+#projects {
+    background-color: #f0f0f0;
+}
+
+#about {
+    background-color: #f0f0f0;
+}
+
+#contact {
+    background-color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to my portfolio!</h1>
+            <p>This is a showcase of my work and skills.</p>
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="project-grid">
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <p>This is a description of project 1.</p>
+                </div>
+                <div class="project">
+                    <h2>Project 2</h2>
+                    <p>This is a description of project 2.</p>
+                </div>
+                <div class="project">
+                    <h2>Project 3</h2>
+                    <p>This is a description of project 3.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h1>About me</h1>
+            <p>This is a brief bio about myself.</p>
+        </section>
+        <section id="contact">
+            <h1>Get in touch</h1>
+            <p>Contact me through email or social media.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

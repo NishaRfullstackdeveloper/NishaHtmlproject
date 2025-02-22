@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Projects</title>
+    <style>
+        /* Main Container */
+        .main-container {
+            min-height: 200vh;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            background-color: blue;
+            color: white;
+            height: 10%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Projects Section */
+        .content {
+            width: 90%;
+            color: white;
+            background-color: black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 5vh;
+            gap: 5vh;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 5vh;
+        }
+
+        .project {
+            border: 2px solid black;
+            border-style: groove;
+            width: 32%;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .project h2 {
+            color: black;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(50%);
+            box-shadow: 5px 5px 10px rgba(60, 24, 109, 0.7);
+            border-radius: 5px;
+        }
+
+        .project img:hover {
+            filter: grayscale(0%);
+        }
+
+        .project a {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .project a:hover {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>MY CSS PROJECTS</h1>
+        </div>
+        <div class="content">
+            <!-- Row One -->
+            <div class="row">
+                <div class="project">
+                    <h2>CHESSBOARD (FLEX)</h2>
+                    <img src="https://m.media-amazon.com/images/I/61sHsfmubhS._AC_UF1000,1000_QL80_.jpg" alt="Chessboard Project">
+                    <h3><a href="flexproject/chessss.html" target="_blank">CHESS BOARD</a></h3>
+                </div>
+                <div class="project">
+                    <h2>FLEX LAYOUT ONE</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JbMVn5ItTDA4Us9CV4DR9aVm1rS2rRpFMA&s" alt="Flex Layout One">
+                    <h3><a href="flexproject/flexlayoutone.html" target="_blank">FLEX LAYOUT ONE</a></h3>
+                </div>
+                <div class="project">
+                    <h2>FLEX LAYOUT TWO</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8JbMVn5ItTDA4Us9CV4DR9aVm1rS2rRpFMA&s" alt="Flex Layout Two">
+                    <h3><a href="flexproject/flexlayouttwo.html" target="_blank">FLEX LAYOUT TWO</a></h3>
+                </div>
+            </div>
+            <!-- Row Two -->
+            <div class="row">
+                <div class="project">
+                    <h2>CALENDAR PROJECT</h2>
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-annual-calendar-template_23-2149716984.jpg" alt="Calendar Project">
+                    <h3><a href="#" target="_blank">CALENDAR ONE</a></h3>
+                </div>
+                <div class="project">
+                    <h2>KEYBOARD ONE</h2>
+                    <img src="https://m.media-amazon.com/images/I/61TVlYCMoML._AC_UF1000,1000_QL80_.jpg" alt="Keyboard Project">
+                    <h3><a href="keyboard.html" target="_blank">KEYBOARD ONE</a></h3>
+                </div>
+                <div class="project">
+                    <h2>KEYBOARD TWO</h2>
+                    <img src="https://m.media-amazon.com/images/I/61TVlYCMoML._AC_UF1000,1000_QL80_.jpg" alt="Keyboard Two">
+                    <h3><a href="keyboardtwo.html" target="_blank">KEYBOARD TWO</a></h3>
+                </div>
+            </div>
+            <!-- Row Three -->
+            <div class="row">
+                <div class="project">
+                    <h2>FLAG PROJECT</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW7a1--Cnct3iJRP3hRqcEnJx1sy2SSkChk89AaPGUXw&s" alt="Indian Flag">
+                    <h3><a href="flag.html" target="_blank">INDIAN FLAG</a></h3>
+                </div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

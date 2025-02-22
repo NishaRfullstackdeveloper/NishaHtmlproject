@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Document</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 300vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* header */
+        .header {
+            background-color: rgb(0, 4, 255);
+            height: 10%;
+            text-align: center;
+            padding: 2vh 0;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+        }
+
+        /* projects */
+        .content {
+            color: white;
+            background-color: black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 5vh;
+        }
+
+        /* row */
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 3vw;
+            margin-bottom: 5vh;
+            justify-content: center;
+        }
+
+        /* project */
+        .project {
+            border: 2px solid #BED754;
+            border-style: groove;
+            width: 30%;
+            padding: 2vh;
+            box-sizing: border-box;
+            margin-top: 2vh;
+            background-color: #222;
+            transition: all 0.3s ease;
+            height: 250px; /* Adjusted height to make boxes smaller */
+        }
+
+        .project:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        /* images */
+        img {
+            filter: grayscale(50%);
+            box-shadow: 10px 10px 10px rgb(65, 39, 82);
+            width: 100%;
+            height: 120px; /* Reduced image height */
+            object-fit: cover; /* Ensure image fits in the container */
+            border-radius: 8px;
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Different row colors */
+        .row-one {
+            background-color: #2c2f3f;
+            padding: 2vh 0;
+        }
+
+        .row-two {
+            background-color: #1a1d2e;
+            padding: 2vh 0;
+        }
+
+        .row-three {
+            background-color: #23293b;
+            padding: 2vh 0;
+        }
+
+        .row-four {
+            background-color: #2b2f3a;
+            padding: 2vh 0;
+        }
+        @media (max-width: 768px) {
+  .row-one, .row-two, .row-three {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .prj-one, .prj-two, .prj-three {
+    width: 100%;
+  }
+}
+
+.prj-one, .prj-two, .prj-three {
+  transition: transform 0.3s ease;
+}
+.prj-one:hover, .prj-two:hover, .prj-three:hover {
+  transform: scale(1.05);
+}
+
+h3 a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+h3 a:hover {
+  color: #007BFF;
+}
+
+/* Consolidated Project Styles */
+.project {
+  border: 2px black;
+  border-style: groove;
+  width: 33%;
+  transition: transform 0.3s ease;
+}
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row-one, .row-two, .row-three {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .project {
+    width: 100%;
+  }
+}
+
+/* Link Styling */
+h3 a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+h3 a:hover {
+  color: #007BFF;
+}
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <!-- <div class="main-container">
+        <div class="header">
+            <h1>MY JAVASCRIPT PROJECTS</h1>
+        </div>
+
+        <!-- projects -->
+        <div class="content">
+
+            <!-- row-one -->
+            <div class="row row-one">
+                <div class="project">
+                    <h2>TICKET PROJECT</h2>
+                    <h3><a href="./ticket.html" style="color: #BED754;">TICKET PROJECT</a></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9nUAsyWCg02knr6rZJLYa4ZlpHuL8bMQ0RuowifUn1A&s" alt="Ticket Project Image">
+                </div>
+
+                <div class="project">
+                    <h2>MY KBC PROJECT</h2>
+                    <h3><a href="./kbc.html" style="color: #BED754;">KBC PROJECT</a></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLjSkkhOB0gT-Grpije7XvK2E6_Nb-zvHRA&s" alt="KBC Project Image">
+                </div>
+
+                <div class="project">
+                    <h2>LARGEST NUMBER PROJECT</h2>
+                    <h3><a href="./largestno.html" style="color: #BED754;">LARGEST NO. PROJECT</a></h3>
+                    <img src="https://videocdn.geeksforgeeks.org/geeksforgeeks/Javascriptprogramtofindlargestof3numbers/Javascriptprogramtofindlargestof3numbers20220908151636.jpg" alt="Largest Number Project Image">
+                </div>
+            </div>
+
+            <!-- row-two -->
+            <div class="row row-two">
+                <div class="project">
+                    <h2>EP FORM PROJECT</h2>
+                    <h3><a href="./epform.html" style="color: #BED754;">FORM PROJECT</a></h3>
+                    <img src="https://cdn.dribbble.com/users/3040407/screenshots/11365333/media/113020226ecbcec127e1aac920b01239.jpg?resize=400x300&vertical=center" alt="EP Form Project Image">
+                </div>
+
+                <div class="project">
+                    <h2>MY ELECT.BILL PROJECT</h2>
+                    <h3><a href="./electricitybill.html" style="color: #BED754;">ELECTRICITY BILL</a></h3>
+                    <img src="https://etimg.etb2bimg.com/photo/84257593.cms" alt="Electricity Bill Project Image">
+                </div>
+
+                <div class="project">
+                    <h2>MY WEEK DAYS PROJECT</h2>
+                    <h3><a href="dayno.html" style="color: #BED754;">DAYS PROJECT</a></h3>
+                    <img src="https://foolishdeveloper.com/wp-content/uploads/2022/04/Get-Day-Name-of-the-Week-in-JavaScript.jpg" alt="Week Days Project Image">
+                </div>
+            </div>
+
+            <!-- row-three -->
+            <div class="row row-three">
+                <div class="project">
+                    <h2>GOOGLE SEARCH</h2>
+                    <h3><a href="../go" style="color: #BED754;">GOOGLE PAGE</a></h3>
+                    <img src="https://www.zdnet.com/a/img/resize/bdae6ce1562b1365b90bddf9618cc2789728273a/2022/03/22/6162f1ab-ff26-46aa-a9c8-20acc0a3cf5d/gettyimages-1237940009.jpg?auto=webp&width=1280" alt="Google Search Project Image">
+                </div>
+
+                <div class="project">
+                    <h2>VOWEL CONSONANT PROJECT</h2>
+                    <h3><a href="vowelORconst.html" style="color: #BED754;">VOWEL CONSONANT PROJECT</a></h3>
+                    <img src="https://miro.medium.com/v2/resize:fit:278/1*E4u716o0tE6ijwL8Y2cGWw.png" alt="Vowel Consonant Project Image">
+                </div>
+
+                <div class="project">
+                    <h2>MY LEAP YEAR PROJECT</h2>
+                    <h3><a href="leap.html" style="color: #BED754;">LEAP YEAR PROJECT</a></h3>
+                    <img src="https://i.ytimg.com/vi/oklttmAzAQM/maxresdefault.jpg" alt="Leap Year Project Image">
+                </div>
+            </div>
+
+            <!-- row-four -->
+            <div class="row row-four">
+                <div class="project"></div>
+                <div class="project"></div>
+                <div class="project"></div>
+            </div>
+
+        </div>
+
+    </div> -->
+
+</body>
+
+</html>
