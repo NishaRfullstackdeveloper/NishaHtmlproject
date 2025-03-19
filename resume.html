@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: #f0f0f0;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        display: flex;
+        max-width: 1100px;
+        margin: 30px auto;
+        background: #fff;
+        box-shadow: 0 0 10px #ccc;
+      }
+      .sidebar {
+        background: #2d6a8d;
+        color: #fff;
+        width: 30%;
+        padding: 40px 30px;
+      }
+      .sidebar img {
+        width: 120px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .sidebar h2 {
+        font-size: 24px;
+      }
+      .sidebar p,
+      .sidebar a {
+        font-size: 14px;
+        color: #ddd;
+      }
+      .sidebar .skills,
+      .languages {
+        margin: 20px 0;
+      }
+      .skills div,
+      .languages div {
+        margin: 10px 0;
+      }
+      .skills div span,
+      .languages div span {
+        display: block;
+        background: #519aba;
+        height: 8px;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      .main-content {
+        padding: 40px;
+        width: 70%;
+      }
+      .main-content h1 {
+        font-size: 32px;
+        color: #333;
+      }
+      .main-content h3 {
+        font-size: 20px;
+        color: #2d6a8d;
+        margin: 20px 0 10px;
+      }
+      .main-content p,
+      .main-content li {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .experience,
+      .projects,
+      .education {
+        margin: 30px 0;
+      }
+      .experience h4,
+      .projects h4,
+      .education h4 {
+        color: #555;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .date {
+        color: #888;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <img src="nisha.jpg" alt="Profile Photo" />
+        <h2>RICHARD SCOTT</h2>
+        <p>Web Developer</p>
+        <br />
+        <h3>Contact</h3>
+        <p>nishawajge1995@gmail.com</p>
+        <p>6266575732</p>
+        <p>Nagpur, Maharastra</p>
+        <p>linkedin.com/resumekraft</p>
+        <p> <a href="https://nisharfullstackdeveloper.github.io/NishaHtmlproject/"></a> github</p>
+        <br />
+        <h3>Skills</h3>
+        <div class="skills">
+          <div>HTML<span style="width: 90%"></span></div>
+          <div>CSS<span style="width: 80%"></span></div>
+          <div>JavaScript<span style="width: 70%"></span></div>
+          <div>React JS<span style="width: 50%"></span></div>
+          <div>Node.js<span style="width: 55%"></span></div>
+
+          <div>Python<span style="width: 50%"></span></div>
+          <div>C<span style="width: 50%"></span></div>
+          <div>Swift<span style="width: 55%"></span></div>
+          <div>Java<span style="width: 55%"></span></div>
+
+          <div>PostgreSQL <span style="width: 80%"></span></div>
+        </div>
+        <h3>Languages</h3>
+        <div class="languages">
+          <div>English<span style="width: 80%"></span></div>
+          <div>Hindi<span style="width: 95%"></span></div>
+          <div>Marathi<span style="width: 75%"></span></div>
+        </div>
+      </div>
+      <div class="main-content">
+        <h1>SUMMARY</h1>
+        <p>
+          ✅ "I recently completed my internship at Enjoy Programming Private
+          Limited as a Full Stack Developer, where I gained hands-on experience
+          in building robust web applications and enhancing my front-end and
+          back-end skills." 🚀 .
+        </p>
+
+        <div class="experience">
+          <h3>Education Qualification</h3>
+          <h4>Bachelor Of Engineering</h4>
+          <p class="date">2014 - 2018</p>
+          <!-- <p>Developing PHP and JS Web Apps.</p> -->
+
+          <h3>HSC</h3>
+          <p class="date">2013-2014</p>
+          <h4>GGHS school sarni (mp)</h4>
+          <p></p>
+        </div>
+
+        <div class="projects">
+          <h3>SSC</h3>
+          <h4>GGHS school sarni (mp)</h4>
+          <p class="date">2011-2012</p>
+          <!-- <ul>
+            <li>Developed in PHP & MySQL (Yii 2 framework).</li>
+            <li>Calculate the price of socks products and issue invoices.</li>
+          </ul> -->
+
+          <h4>Tools Use For Development </h4>
+          <p class="date"> github</p>
+          <h2> IDE</h2>
+          <ul>
+            <li>Visual studio</li>
+            <li> Android Studio</li>
+          </ul>
+        </div>
+
+        <div class="education">
+          <h3>CERTIFICATION</h3>
+          <h4>FULL-STACK-DEVELOPER</h4>
+          <p> ENJOY PROGRAMMING PVT. LTD. </p>
+          <p class="date">JAN 2024 - CONTINUE</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
